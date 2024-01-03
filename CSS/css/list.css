@@ -1,0 +1,9 @@
+.list{
+    list-style-type: none;
+}
+
+.list li{
+    font-size: 20px;
+    display: inline-block;
+    width: 100px;
+}

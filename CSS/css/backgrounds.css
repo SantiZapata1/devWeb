@@ -1,0 +1,84 @@
+.box{
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+    width: 200px;
+    height: 200px;
+    border: thick dashed black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-color{
+    background-color: saddlebrown;
+}
+
+.bg-image{
+    background-image: url(../assets/image2.jpeg);
+}
+.bg-cover{
+    background-image: url(../assets/image2.jpeg);
+    background-size: cover ;
+    display: inline-block;
+}
+.bg-contain{
+    background-image: url(../assets/image2.jpeg);
+    background-size: contain ;
+    display: inline-block;
+}
+.bg-repeat{
+    background-image: url(../assets/image2.jpeg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.bg-repeat2{
+    background-image: url(../assets/image2.jpeg);
+    background-size: 100px;
+}
+
+.bg-position{
+    background-image: url(../assets/image2.jpeg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-clip{
+
+    background-image: url(../assets/image2.jpeg);
+    background-color: aqua;
+    background-size: 150px 150px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+
+}
+.bg-origin{
+    background-image: url(../assets/image2.jpeg);
+    background-color: aqua;
+    background-size: 150px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+.bg-attach{
+    background-image: url(../assets/image2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 90%;
+    height: 50vh;
+}
+
+.bg-art{
+
+    margin: 20px;
+    border: thin solid black;
+    width: 70vw;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: aliceblue;
+    background: url(../assets/bob.png) repeat left/15%, url(../assets/fondoExtrano.png)  no-repeat center/cover fixed;
+
+
+}
+

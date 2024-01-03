@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/backgrounds.css">
+    <title>Fondos en css</title>
+</head>
+<body>
+    <a href="indexCss.html#temario-css">
+        <img src="img/pointer.svg" alt="puntero para volver al temario" width="35px">
+    </a>
+    <h1>Fondos en css</h1>
+
+    <p>Como en muchas propiedades, para usar las que son para los fondos tambien hay propiedades especificas y shorthands para ahorrar codigo, pero por temas de renderizacion y demas es mejor usar las propiedades especificas antes que los shorthands</p>
+
+    <h3>Propiedades para el background o fondo:</h3>
+
+    <ul>    
+        <li><b>background-color</b> Define el color de fondo del elemento</li>
+        <div class="box bg-color"></div>
+
+        <li><b>background-image</b>Define la imagen de fondo del elemento. Si no se especifica un tamano, estara en su tamano original.</li>
+
+        <div class="box bg-image"></div>
+
+        <li><b>background-size</b> Define el tamano de la imagen de fondo, Se lo puede hacer de diferentes maneras, la primera es indicando el tamano de ancho y alto para que la imagen se adapte a eso. La segunda es colocandole el valor de "cover" que lo que hace es priorizar que todo el elemento tenga la imagen, por lo que se va a modificar el tamano real de la imagen para que el elemento este relleno. Y el tercer valor es "Contain", que cambia el tamano de la imagen pero se vera en sus dimensiones originales, y si falta espacio por rellenar se repetira hasta que este cubierto
+
+            
+        
+        </li>
+
+        <div class="box bg-image bg-cover"></div>
+        <div class="box bg-size bg-contain"></div>
+
+        <li><b>background-repeat</b> Define como se repite la imagen de fondo del elemento, si falta rellenar espacio la repetira a la imagen (de diferentes maneras), pero con la propiedad <code>no-repear</code> no repetira la imagen por mas que no rellene todo el elemento</li>
+        <div class="box bg-repeat"></div>
+        <div class="box bg-repeat2"></div>
+
+        <li><b>background-position</b> Define posicion en x e y que deseamos que este la imagen de fondo. Tambien podemos indicar que la posicion sea bottom, left, top, right, o combinaciones de estos.</li>
+        <div class="box bg-position"></div>
+
+        <li><b>background-clip (fondo)</b> Determina desde cuando arranca a reproducirse el color de fondo, si desde el borde, padding o content</li>
+        <div class="box bg-clip"></div>
+
+        <li><b>background-origin (imagen)</b> Determina desde cuando arranca a reproducirse la imagen de fondo, si desde el borde, padding o content</li>
+        <div class="box bg-origin"></div>
+
+        <li><b>background-attachment</b> Define como se comporta la imagen de fondo ante el scroll de la pagina</li>
+        <div class="box bg-attach"></div>
+
+    </ul>
+
+    <h4>Practica</h4>
+
+    <div class="bg-art bg-art2">
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+</body>
+</html>

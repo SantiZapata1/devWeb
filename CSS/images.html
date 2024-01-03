@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/images.css">
+    <title>images</title>
+</head>
+<body>
+
+    <a href="indexCss.html#temario-css">
+        <img src="img/pointer.svg" alt="puntero para volver al temario" width="35px">
+    </a>
+    <h1>Estilos en imagenes</h1>
+
+    <p>Dentro de los estilos que se les puede dar a las imagenes, una de las mas importantes es hacer responsive una imagen</p>
+
+    <p>Codigo para hacer responsive una img <br>
+    <pre>
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    </pre>
+    </p>
+
+    <img src="assets/bob.png" alt="">
+
+
+    <h2>Imagenes con tamanos especificos</h2>
+
+    <p>
+        <b>Objet-fit</b> La propiedad CSS object-fit indica cómo el contenido de un elemento reemplazado, por ejemplo un img o video, debería redimensionarse para ajustarse a su contenedor. Se puede alterar la alineación del contenido del elemento reemplazado utilizando la propiedad object-position.
+
+    </p>
+
+    <h3>Propiedades de object-fit</h3>
+
+    <ul>
+        <li> <b>fill:</b> Es el valor por defecto, Modifica el tamaño de la imagen para llenar el cuadro de contenido. El objeto completo ocupará todo el espacio de la caja. Si el tamaño del elemento no concuerda con el de su caja, se estirará para llenarlo.</li>
+        <li> <b>cover:</b> El contenido reemplazado se dimensiona para mantener su relación de aspecto mientras llena el cuadro de contenido completo del elemento. Si la relación de aspecto del objeto no coincide con la relación de aspecto de su caja, entonces el objeto se recortará para que se ajuste.</li>
+        <li> <b>contain:</b> se muestra toda la imagen ya que se la redimensiona para que entre en su contenedor, es probable a que queden espacios en blanco</li>
+        <li><b>none:</b> la imagen se muestra en el tamano original</li>
+        <li><b>scale-down:</b> Toma el valor que sea menor de los valores contain y none (no recomendada)</li>
+    </ul>
+
+
+    <div class="card">
+
+        <img src="assets/paisaje.avif">
+
+        <h3>Titulo del card</h3>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
