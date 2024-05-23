@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/colors.css">
+
+    <title>Colors in CSS</title>
+</head>
+<body>
+
+    <a href="indexCss.html#temario-css">
+        <img src="../img/pointer.svg" alt="puntero para volver al temario" width="35px">
+    </a>
+
+    <h1>Colores en CSS</h1>
+
+    <a href="https://htmlcolorcodes.com/es/">Color piker</a>
+
+
+    <p>Existen 4 formas diferentes de usar los colores en CSS</p>
+
+    <ul>
+        <li> <b>Por su nombre:</b> Existe una lista de colores que se pueden utilizar indicando su nombre</li>
+        <li><b>Sistema hexadecimal:</b> se basa en el sistema de numeracion hexadecimal (16 digitos), estos colores seran representaciones de 6 digitos, los 2 primeros representa la intensidad del rojo, los del medio el verde y los del final el azul, por (RGB). Agregandole 2 digitos que van de 00 a 99 indicamos la opacidad o transparencia del color</li>
+        <li><b>RGB (Red Green Blue):</b> se usa en medios digitales, para usar este sistema de colores se utiliza una funcion que recibe 3 parametros, que son los valores de cada uno de los colores, que van de 0 a 255. Para usar la opacidad con esta funcion debemos usar rgba con valores que can del 0 al 1</li>
+        <li><b>HSL (Hue Saturation Loghtness):</b> Este es un sistema que se basa en representar los colores indicando tono, saturacion y luminosidad. Para el tono debemos ayudarnos del circulo cromatico, en donde a traves de sus grados recorremos los diferentes tonos que van de 0 a 360 grados. El segundo es la intensidad del color que queremos y va de 0% a 100%. Por ultimo, el valor que queda es la luminosidad, este valor dara que tan luminoso o apagado deseamos que este el color</li>
+    </ul>
+
+    <h3>Cual usar?</h3>
+    <p>
+        Cualquier sistema de colores se puede usar, pero segun lo que utilizan los navegadores, es una buena practica si trabajamos con el sistema rgb. Aunque depende mucho de cada uno, pero lo que si es importante es usar el mismo sistema siempre.
+    </p>
+
+
+    <div class="color-by-name">
+
+        <h2>Color por nombre</h2>
+        
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vero, nesciunt rem deserunt sit quod natus accusamus non et? Perspiciatis fugit nobis illo voluptas sunt! Doloribus aliquam qui ipsum enim.</p>
+
+        <code>color:red</code>
+
+    </div>
+    <div class="color-by-hex">
+
+        <h2>Color por sistema hexa</h2>
+        
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vero, nesciunt rem deserunt sit quod natus accusamus non et? Perspiciatis fugit nobis illo voluptas sunt! Doloribus aliquam qui ipsum enim.</p>
+
+        <code>#ffffff = blanco</code><br>
+        <code>#000000 = negro</code><br>
+        <code>#xx xx xx = x color</code><br>
+
+    </div>
+    <div class="color-by-rgb">
+
+        <h2>Color por RBG</h2>
+        
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vero, nesciunt rem deserunt sit quod natus accusamus non et? Perspiciatis fugit nobis illo voluptas sunt! Doloribus aliquam qui ipsum enim.</p>
+
+        <code>rgb(200,100,230)</code>
+
+    </div>
+    <div class="color-by-hsl">
+
+        <h2>Color por HSL</h2>
+        
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vero, nesciunt rem deserunt sit quod natus accusamus non et? Perspiciatis fugit nobis illo voluptas sunt! Doloribus aliquam qui ipsum enim.</p>
+
+        <code>hsl(60, 100%, 20%)</code><br>
+
+        <img src="../assets/circuloCromatico.png" alt="imagen de circulo cromatico">
+
+    </div>
+
+    <h3>Propiedad opacity</h3>
+    <p>
+        Aplica el nivel de opacidad o transparencia deseamos darle a los colores que utilizamos tanto para un atributo como para todos los atributos de un elemento. Se lo hace con la propiedad <code>opacity: 0-1</code>
+    </p>
+
+    <div class="ejemplo-opacity">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores deleniti quas quod molestias, accusantium repudiandae nisi distinctio explicabo est quo aliquam aperiam iure quos maiores libero tenetur iste sed eaque.
+    </div>
+
+
+    <div class="practica">
+        <h1>Titulo <span>subtitulo</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda at cupiditate optio, eaque facilis quam consequuntur ut! Harum, placeat aspernatur sit saepe dolor enim est distinctio veritatis dicta quibusdam amet.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+</body>
+</html>

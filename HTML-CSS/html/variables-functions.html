@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/variables-functions.css">
+    <title>Variables y funciones</title>
+</head>
+<body>
+
+    <a href="indexCss.html#temario-css">
+        <img src="../img/pointer.svg" alt="puntero para volver al temario" width="35px">
+    </a>
+
+    <h1>Variables y funciones</h1>
+
+    <h2>Custom properties o propiedades personalizadas (variables CSS)</h2>
+
+    <P>Son variables que guardar datos, que segun el selector usado determinamos su alcance. Para su declaracion comenzamos con dos guiones "--" y para su uso usamos la funcion var(). La definicion de las variables se realiza en un selector y puede ser usado en todos los hijos de ese elemento. Para definir variables globales se las declara en la pseudoclase :root. </P>
+
+    <h4>ejemplos</h4>
+    <pre>
+        :root{
+            --bg-box:salmon;
+            --bg-body:beige;
+            --bg-code:gray;
+            --color-code:greenyellow;
+            --border-color:blue;
+            --inline-block:inline-block;   
+        }
+        body{
+            background-color: var(--bg-body);
+        }
+        .box{
+            width: 10%;
+            height: 10vh;
+            border: thin solid var(--border-color);
+            background-color: var(--bg-box);
+            padding: 5px;
+            margin: 5px 10px;
+            display: var(--inline-block);
+        }
+        code, 
+        pre{
+            display: inline-block;
+            padding: 5px;
+            color: var(--color-code);
+            background-color: var(--bg-code);
+        }
+    </pre>
+    <br>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <h2>Funciones CSS</h2>
+
+    <p>
+        En CSS, las funciones son un conjunto de instrucciones predefinidas que realizan cálculos, transformaciones y operaciones en los valores de las propiedades CSS. Estas funciones se utilizan para modificar o ajustar características como el color, el tamaño, la posición, la opacidad, entre otros, de los elementos en una página web.
+    </p>
+
+    <ul>
+        <li>var(): usar nuestras variables de atributos</li>
+        <li>url(): importar hojas de estilo o tipografias</li>
+        <li>calc(): usado para realizar calculos aritmeticos. Para que no se rompa la funcion, entre parametros debe haber un espacio</li>
+        <li>min() & max(): de la lista de valores que le damos, utilizara el valor minimo o maximo. Sirve para que el tamano de los elementos sea dinamico o variable</li>
+        <li>clamp(): tambien sirve para hacer dinamicos los tamanos: esta funcion recibe 1 valor que es el tamano minimo, el 2do que es el ideal y el 3ro que es el maximo. <br> 
+        Muy util en responsive design ya que el elemento tomara su tamano dependiendo del tamano del viewport</li>
+    </ul>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

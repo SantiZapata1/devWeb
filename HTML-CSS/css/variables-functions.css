@@ -1,0 +1,28 @@
+:root{
+    --bg-box:salmon;
+    --bg-body:beige;
+    --bg-code:gray;
+    --color-code:greenyellow;
+    --border-color:blue;
+    --inline-block:inline-block;
+
+}
+body{
+    background-color: var(--bg-body);
+}
+.box{
+    width: 10%;
+    height: 10vh;
+    border: thin solid var(--border-color);
+    background-color: var(--bg-box);
+    padding: 5px;
+    margin: 5px 10px;
+    display: var(--inline-block);
+}
+code, 
+pre{
+    display: inline-block;
+    padding: 5px;
+    color: var(--color-code);
+    background-color: var(--bg-code);
+}

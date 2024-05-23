@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/boxModel.css">
+    <title>Modelo de cajas en CSS</title>
+</head>
+<body>
+
+    <a href="indexCss.html#temario-css">
+        <img src="../img/pointer.svg" alt="puntero para volver al temario" width="35px">
+    </a>
+
+    <h1>Modelo de cajas CSS</h1>
+
+    <p>
+        Para HTML todos los elementos son <b>cajas</b> que tienen <i> relleno (padding), borde (border ) y margen (margin).</i>
+    </p>
+
+    <p>
+        Un elemento puede ser de bloque (ocupa todo el espacio) o de linea (ocupa lo minimo e indispensable)
+    </p>
+
+    <ul>
+        <li>CONTENT: es el contenido del elemento HTML, tomando en cuenta sus dimenciones (width y height)</li>
+        <li><b>padding:</b> distancia interna de la caja (del contenido al borde)</li>
+        <li><b>border:</b> borde de la caja, es lo que delimita cada elemento HTML</li>
+        <li><b>margin:</b> distancia externa de la caja (del borde hasta el proximo elemento)</li>
+    </ul>
+
+    <p>
+        <strong>Aclaracion: </strong>
+        Dentro del modelo de cajas hay que considerar que una caja tiene 4 lados
+    </p>
+
+    <ol>
+        <li>Arriba (top)</li>
+        <li>Derecha (right)</li>
+        <li>Abajo (bottom)</li>
+        <li>Izquierda (left)</li>
+    </ol>
+
+    <h5>Ejemplo:</h5>
+    <p class="texto-ejemplo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt earum nostrum eos aspernatur maxime laudantium amet, culpa veniam hic voluptatibus mollitia impedit eum adipisci numquam eius illum eaque aliquam consequuntur.
+    </p>
+
+    <img src="img/boxModel.png" alt="ejemplo de box model" width="30%" class="center"><br>
+
+    <hr>
+
+    <p>
+        La propiedad border tiene varias subpropiedades, como el grosor (width), estilo (style) y color <br>
+    </p>
+
+    <h4>ejemplo de bordes</h4>
+    <p class="borde1">Ejemplo de bordes <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis veritatis nulla, sint reprehenderit alias provident, architecto, laudantium voluptate nam expedita earum vitae rerum consectetur quisquam soluta nostrum tempora dicta officiis.</p>
+
+    <p class="borde2">Ejemplo de bordes <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, blanditiis saepe et molestiae qui unde aperiam corrupti in distinctio? Unde ea sunt tempora nobis fugiat rerum porro, error ipsam nihil!</p>
+
+    <p> 
+        Por otro lado, a la hora de implementar margin y padding, se puede hacer de diferentes formas: <br>
+        <ul>
+            <li>1 valor: los 4 lados</li>
+            <li>2 valores: arriba-abajo y derecha-izquierda</li>
+            <li>3 valores: arriba, lados y abajo</li>
+            <li>4 valores: arriba, derecha, abajo, izquierda (como las agujas del reloj)</li>
+        </ul>
+    </p>
+
+    <h4>ejemplo de margin</h4>
+<pre>
+    .margen1{
+        margin: 10px 500px 25px 10px;
+        border: medium solid green;
+    }
+</pre>
+    <div class="margen1 ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi illo sint optio omnis expedita mollitia culpa id. Ratione a at magnam voluptatem dignissimos vero quisquam eius eum, molestias cumque?
+    </div>
+
+    <h4>ejemplo de padding</h4>
+<pre>
+    .padding1{
+        padding: 50px 20px 10px;
+        border: medium solid salmon;
+    }
+    
+</pre>
+    <div class="padding1 ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi illo sint optio omnis expedita mollitia culpa id. Ratione a at magnam voluptatem dignissimos vero quisquam eius eum, molestias cumque?
+    </div>
+
+    <hr>
+
+    <h2>elementos en bloque y en linea</h2>
+
+    <h3>Cajas en linea</h3>
+
+    <ul>
+        <li>Ocupan solo el espacio necesario</li>
+        <li>No tienen dimenciones modificables (ancho y alto)</li>
+        <li>Gracias a esto permite que otros elementos esten a su lado</li>
+        <li>Las propiedades padding y margin solo se aplicaran de forma horizontal, verticalmente los ignora. En la practica el elemento toma verticalmente tambien pero pierde el flujo.</li>
+    </ul>
+
+    <h5>Ejemplos de cajas de linea:</h5>
+
+    <span class="caja-linea">caja de linea</span>
+    <span class="caja-linea"> caja de linea</span>
+    <span class="caja-linea2"> caja de linea 2</span>
+
+    <h3>Cajas en bloque</h3>
+
+    <ul>
+        <li>Ocupan todo el ancho disponible</li>
+        <li>Tienen dimenciones modificables (ancho y alto)</li>
+        <li>No permiten que otros elementos esten a su lado (por mas que su contenido no use todo el ancho), por lo que provocan saltos de linea</li>
+    </ul>
+
+    <h5>Ejemplo</h5>
+<pre>
+    .caja-bloque{
+        height: 200px;
+        width: 200px;
+        border: thick solid gray;
+        margin: 5px;
+        padding: 5px;
+        background-color: aliceblue;
+    }
+    .caja-bloque2{
+        height: 200px;
+        width: 500px;
+        border: thick solid rgb(118, 67, 67);
+        margin: 5px;
+        padding: 5px;
+        background-color: rgb(175, 185, 193);
+    }
+    .caja-bloque3{
+        
+        border: thin solid rgb(236, 2, 2);
+        margin: 5px;
+        padding: 5px;
+        background-color: rgb(216, 226, 235);
+    }
+</pre>
+
+    
+    <div class="caja-bloque3">caja de bloque 1</div>
+    <div class="caja-bloque">caja de bloque 2</div>
+    <div class="caja-bloque2"> caja de bloque 3</div>
+
+
+    <hr>
+
+    <h2>Propiedad display</h2>
+
+    <p>
+        Esta propiedad  le indica al navegador como se debe comportar el elemento html, ademas de los atributos inline y block esta otros que son flex y grid, que son modulos de maquetacion que se usan para maquetar paginas web de diferentes maneras, cada una tiene su propia implementacion.
+    </p>
+
+    <h4>Distintos atributos de Display:</h4>
+    <ul>
+        <li>inline: el elemento se comportara en linea</li>
+        <li>block: el elemento se comportara en bloque</li>
+        <li>inline-block: el elemento se comportara como en linea pero aceptara modificaciones de ancho y alto como uno en bloque</li>
+        <li>none: carga pero oculta el elemento html</li>
+        <li>flex: modelo de maquetacion</li>
+        <li>grid: modelo de maquetacion</li>
+    </ul>
+
+    <div class="display-inline">caja con porpiedad <code>diplay:inline-block</code><br>
+        <pre>.display-inline{
+
+        border: thin solid black;
+        display: inline-block;
+        width: 400px;
+        height: 200px;
+        background-color: rgb(230, 230, 135);
+    }
+    </pre>
+    </div>
+    <div class="display-inline">caja con porpiedad <code>diplay:inline-block</code><br>
+        <pre>.display-inline{
+
+        border: thin solid black;
+        display: inline-block;
+        width: 400px;
+        height: 200px;
+        background-color: rgb(230, 230, 135);
+    }
+    </pre>
+    </div>
+    <div class="display-inline">caja con porpiedad <code>diplay:inline-block</code><br>
+        <pre>.display-inline{
+
+        border: thin solid black;
+        display: inline-block;
+        width: 400px;
+        height: 200px;
+        background-color: rgb(230, 230, 135);
+    }
+    </pre>
+    </div>
+
+
+    <hr>
+
+    <h2>Visibility</h2>
+
+    <p>
+        Se usa cuando deseas ocultar el elemento html pero por alguna razon necesitas guardar el espacio que ocupa ese elemento. A diferencia de <code>display:none</code>, con esta propiedad reservamos el espacio del elemento, nada mas que no se ve.
+    </p>
+
+    <div class="padre-hidden">
+        <div class="caja-hidden"></div>
+    </div>
+
+    <small>arriba de esto esta el elemento oculto</small>
+
+    <hr>
+
+    <h2>Overflow</h2>
+
+    <p>
+        esta propiedad nos va a indicar que va a hacer el contenido que sobrepasa el tamano de su caja contenedora
+    </p>
+
+    <h4>overflow asi nomas</h4>
+    <p class="overflow2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam illo odit saepe! Illo soluta molestiae ducimus reprehenderit ex recusandae nostrum sunt, reiciendis repellendus nulla sapiente in ratione neque veritatis ullam?</p>
+
+    <br><br><br>
+
+
+    <h4>overflow arreglado</h4>
+    <p class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odio temporibus rem inventore eius vel? Eaque ea itaque quam, iusto magni saepe? A maiores voluptatem dolores dolore repellendus accusamus voluptatibus.</p>
+    <code>    overflow:scroll;
+    </code>
+
+    <hr>
+
+    <h2>Tamano de caja o box-sizing</h2>
+
+    <p>Esta propiedad define como el alto y ancho de una caja es calculado, el valor predeterminado es <code>content-box</code>, y este toma en cuenta el ancho y alto que le pasemos para darselo al CONTENIDO y los valores de padding, borde y margin se agregan a eso. Sin embargo si usamos <code>border-box</code> las medidas que le pasemos se le restaran al padding, borde y margin que tengamos, por lo que nuestro tamano de contenido se ira achicando</p>
+
+
+    <h4>content-box</h4>
+    <div class="content-box">200x200</div>
+
+    <h4>border box</h4>
+    <div class="border-box">200x200 <br> Generalmente conviene usar esta para que no nos afecte en la maquetacion de nuestra pagina web</div>
+
+
+    <p>Existe una tecnica para no estar aplicandole a todos nuestros elementos esta propiedad y es usando este codigo css:</p>
+
+    <code>
+        html{<br>box-sizing:border-box <br> } <br><br>
+        *,*:before,*:after{ <br>
+        box-sizing:inherit <br> } <br>
+    </code>
+
+    <p>Escribiendo este codigo css al inicio del programa reseteas todos los tamanos de los elementos para no tener que estar realizando calculos y arreglos tediosos todo el tiempo a nuestros elementos html</p>
+
+    <hr>
+
+    <h2>Float y clear</h2>
+
+    <p><b>float </b>La propiedad CSS float ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo a los elementos de texto y en línea aparecer a su costado. El elemento es removido del normal flujo de la página, aunque aún sigue siendo parte del flujo (a diferencia del posicionamiento absoluto).Como se ha mencionado más arriba, cuando un elemento flota, es removido del flujo normal del documento (aunque sigue perteneciendo a él). Se cambia hacia la izquierda, o hacia la derecha, hasta que toca el límite de su caja contenedora, u otro elemento flotante. <br>Esto ya no se utiliza por los modelos de maquetacion, como grid o flex box. Igual es importante entender el concepto porque paginas web viejas pueden implementar estas propiedades.</p>
+
+    <p><b>Limpiando (clearing) flotantes
+    </b>A veces querrás forzar un item a moverse por debajo de elementos flotantes. Por ejemplo, párrafos que han de permanecer adyacentes a elementos flotantes, pero forzar a los encabezados a estar en su propia línea. Para ello revisa el siguiente ejemplo: clear</p>
+
+
+    <h4>ejemplos:</h4>
+    <div class="floar-clear">
+        <section class="float-rigth margin-padding">float derecha</section>
+        <section class="float-rigth margin-padding">float derecha</section>
+        <section class="float-rigth margin-padding">float derecha</section>
+        <section class="float-rigth margin-padding">float derecha</section>
+        <section class="float-rigth margin-padding">float derecha</section>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, harum natus dolor accusamus, beatae, corporis atque quis voluptatem quisquam inventore necessitatibus! Obcaecati accusamus molestias ab architecto exercitationem modi a natus.</p>
+    
+        <section class="float-left margin-padding">float izquierda</section>
+        <section class="float-left margin-padding">float izquierda</section>
+        <section class="float-left margin-padding">float izquierda</section>
+        <section class="float-left margin-padding">float izquierda</section>
+        <section class="float-left margin-padding">float izquierda</section>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsa et labore explicabo aperiam corrupti, in error aut magnam eligendi cumque. Iusto repudiandae eveniet perspiciatis! Odit fugiat perspiciatis laboriosam suscipit!</p>
+    
+        <section class="clear-both margin-padding">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam tempore dignissimos reprehenderit ipsa exercitationem eligendi dicta ex sunt vero consectetur itaque aspernatur illo magni, iusto sequi quod vitae minus ab.</section>
+    </div>
+    
+
+    <hr>
+
+    <h2>Colapso de margenes</h2>
+
+    <p>Los márgenes Top (en-US) y bottom de los bloques a veces están combinados (colapsados) en un solo margen cuyo tamaño es el mayor de los márgenes combinados, un comportamiento conocido como colapso de margen. Ten en cuenta que los márgenes de flotantes y elementos con posición absoluta nunca colapsan. <br> Ver en que casos colapsan y en cuales no.</p>
+
+    <div class="colapso-margenes">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="colapso-margenes">
+        <div></div>
+        <div></div>
+    </div>
+
+    <hr>
+
+    <h2>Centrado de cajas</h2>
+
+    <p>Para centrar las cajas al tamano de las diferentes pantallas de lleva a cabo aplicando a la caja contenedora la propiedad <code>margin-left: auto; margin-right: auto;</code> <br> Asi logramos que se coloque en el centro del espacio disponible. Tambien el elemento debe ser de tipo bloque</p>
+
+    <article class="sitio-web">
+        <header class="header"></header>
+        <main class="main"></main>
+        <footer class="footer"></footer>
+    </article>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    
+</body>
+</html>

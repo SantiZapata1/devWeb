@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(246, 224, 115);
+}
+code{
+    background-color: black;
+    color: rgb(59, 241, 8);
+    padding: 3px;
+}
+.caja-static{
+    background-color: rgb(176, 147, 203);
+    border: thin solid black;
+    text-align: center;
+    position: static;
+    width: 500px;
+    height: auto;
+    padding: 5px;
+}
+.caja-relative{
+    background-color: rgb(160, 225, 225);
+    border: thin solid black;
+    text-align: center;
+    width: 500px;
+    height: auto;
+    position: relative;
+    top: 50px;
+    left: 600px;
+    padding: 15px;
+}
+.caja-absolute{
+    background-color: rgb(236, 145, 27);
+    padding: 0.5rem;
+    border: thin solid black;
+    position: absolute;
+    width: 1500px;
+    text-align: center;
+
+    top: 0px;
+    right: 0px;
+    
+}
+.caja-fixed{
+    background-color: rgb(233, 102, 102);
+    border: thin solid black;
+    text-align: center;
+    width: 80%;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px;
+
+}
+/* sticky */
+.caja-sticky{
+    background-color: rgb(196, 196, 16);
+    border: thin solid black;
+    text-align: center;
+    position: sticky;
+    top: 10px;
+    padding: 15px;
+}
+.padre-sticky{
+    background-color: lightcyan;
+    border: thin solid black;
+    margin-top: 100px;
+    width: 1000px;
+    height: 600px;
+    padding: 15px;
+}
+
+
+/* z-index */
+.z-index-1,
+.z-index-2,
+.z-index-3{
+
+    border: thin solid black;
+    width: 200px;
+    height: 200px;
+
+    position: relative;
+}
+
+.z-index-1{    
+    background-color: lightgreen;
+    top: 100px;
+    left: 20px;
+    z-index: 1;
+}
+.z-index-2{
+    z-index: 2;
+    background-color: lightpink;
+}
+.z-index-3{
+    top: -140px;
+    left: 50px;
+    z-index: 3;
+    background-color: lightblue;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/images.css">
+    <title>images</title>
+</head>
+<body>
+
+    <a href="indexCss.html#temario-css">
+        <img src="../img/pointer.svg" alt="puntero para volver al temario" width="35px">
+    </a>
+    <h1>Estilos en imagenes</h1>
+
+    <p>Los estilos CSS que puedes aplicar a una imagen son diversos y te permiten controlar cómo se ve y se comporta la imagen en tu página web. </p>
+
+    <h3>Imagenes responsivas</h3>
+
+    <p>Dentro de los estilos que se les puede dar a las imagenes, una de las mas importantes es hacer responsiva una imagen</p>
+    <pre>
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    </pre>
+    <br>
+    <h4>ejemplo:</h4>
+
+    <div class="content-image">
+            <img src="assets/bob.png" alt="">
+    </div>
+
+    <h2>Imagenes con tamanos especificos</h2>
+
+    <p>Cuando necesitamos que el elemento "imagen" tenga un tamano en especifico en nuestra pagina web, se la podemos dar con valores fijos o dinamicos, pero tambien podemos configurar como va a comportarse el contenido de la imagen en ese espacio que le indiquemos</p>
+
+    <h3>Objet-fit</h3>
+
+    <p>
+        En HTML, cuando colocas una imagen en tu página web, puedes controlar cómo se muestra en su contenedor utilizando la propiedad object-fit en CSS. Esta propiedad te permite especificar cómo la imagen debe ajustarse al contenedor. 
+    </p>
+
+    <h3>Objet-position</h3>
+    <p>
+        La propiedad object-position en CSS se utiliza para especificar la posición inicial de una imagen dentro de su contenedor. Esta propiedad toma dos valores: uno para la posición horizontal y otro para la posición vertical. 
+    </p>
+
+    <h3>Propiedades de object-fit</h3>
+
+    <ul>
+
+        <li> <b>fill:</b> <mark>valor por defecto</mark> La imagen se ajustará para llenar completamente el contenedor, sin mantener su relación de aspecto. <br> Esto puede hacer que la imagen se vea distorsionada si la relación de aspecto del contenedor y la imagen no coinciden. <b>Prioriza que se vea toda la imagen</b>
+            <div class="card">
+
+                <img class="fill" src="assets/paisaje.avif" >
+        
+                <h3>Titulo del card</h3>
+        
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto rem natus necessitatibus, facilis repudiandae sint officia inventore perferendis cum veritatis, itaque dolor recusandae beatae minus quasi, nostrum sed fuga quam?</p>
+        
+            </div>
+        </li>
+
+        <li><b>none:</b>La imagen se mostrará a su tamaño real, sin ajustes, y posiblemente se recortará si es más grande que el contenedor. <b>Prioriza el tamaño real de la imagen</b>
+            <div class="card">
+
+                <img class="none" src="assets/paisaje.avif">
+        
+                <h3>Titulo del card</h3>
+        
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto rem natus necessitatibus, facilis repudiandae sint officia inventore perferendis cum veritatis, itaque dolor recusandae beatae minus quasi, nostrum sed fuga quam?</p>
+        
+            </div>
+            
+        </li>
+
+        <li> <b>cover:</b> La imagen se ajustará para cubrir todo el contenedor, manteniendo su relación de aspecto. <br> Esto significa que es posible que la imagen se recorte para llenar completamente el contenedor, pero sin distorsionarla. <b>Prioriza rellenar el espacio y mantener la relacion de aspecto</b>
+            <div class="card">
+
+                <img class="cover" src="assets/paisaje.avif" >
+        
+                <h3>Titulo del card</h3>
+        
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto rem natus necessitatibus, facilis repudiandae sint officia inventore perferendis cum veritatis, itaque dolor recusandae beatae minus quasi, nostrum sed fuga quam?</p>
+        
+            </div>
+        </li>
+
+        <li> <b>contain:</b> La imagen se ajustará para que quepa completamente dentro del contenedor, manteniendo su relación de aspecto. <br>Esto significa que es posible que el contenedor tenga espacio en blanco alrededor de la imagen si la imagen es más pequeña que el contenedor. <b>Prioriza que se vea toda la imagen manteniendo su formato</b>
+            <div class="card">
+
+                <img class="contain" src="assets/paisaje.avif" >
+        
+                <h3>Titulo del card</h3>
+        
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto rem natus necessitatibus, facilis repudiandae sint officia inventore perferendis cum veritatis, itaque dolor recusandae beatae minus quasi, nostrum sed fuga quam?</p>
+        
+            </div>
+        </li>
+
+        
+
+    </ul>
+
+    <h4>Resumen comparativo de <code>Objet-position</code></h4>
+
+    <img src="assets/Screenshot 2024-03-26 at 17.38.05.png" alt="" class="comparacion">
+
+</body>
+</html>

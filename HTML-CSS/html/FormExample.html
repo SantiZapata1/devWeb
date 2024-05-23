@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formExample.css">
+    <title>Ejemplo de formulario</title>
+</head>
+<body>
+
+    <a href="indexCss.html#temario-css">
+        <img src="../img/pointer.svg" alt="puntero para volver al temario" width="35px">
+    </a>
+
+    <h1>Formularios</h1>
+
+    <p>Para realizar formularios se usan diversos elementos:</p>
+
+    <ol>
+        <li><b>FORM</b> es el elemento tipo block donde va todo el contenido, para enviar datos, este puede usar 2 metodos que debe indicar:
+            <ol>
+                <li><B>GET</B>: El método GET se utiliza para solicitar datos de un recurso específico en un servidor. Cuando se envía una solicitud GET, los datos se envían como parte de la URL en la cadena de consulta (query string). Por ejemplo, si tienes un formulario con un campo de texto llamado nombre y envías los datos usando GET, la URL resultante podría ser algo como http://ejemplo.com/procesar.php?nombre=Juan. Este método es útil para solicitar recursos o datos específicos y se pueden marcar como favoritos o compartirse fácilmente, ya que los parámetros se muestran en la URL.</li>
+                <li>
+                    <B>POST</B>: El método POST se utiliza para enviar datos al servidor para ser procesados. A diferencia de GET, los datos enviados con POST no se muestran en la URL y se envían en el cuerpo de la solicitud HTTP. Esto hace que sea más seguro para enviar datos sensibles como contraseñas. Además, no hay límite en la cantidad de datos que se pueden enviar con POST, mientras que GET tiene limitaciones en la longitud de la URL. POST es comúnmente utilizado para enviar datos de formularios y para realizar actualizaciones en el servidor.
+                </li>
+            </ol>
+            En resumen, GET se utiliza para solicitar datos, mientras que POST se utiliza para enviar datos al servidor para ser procesados. La elección entre GET y POST depende del tipo de datos que se están enviando y del propósito de la solicitud.
+        </li>
+        <li><B>INPUT</B>: son los elementos en donde nosotros ingresaremos diferente tipo de informacion. Este tiene varios atributos:
+            <ul>
+                <li><b>type</b>: indica el tipo de dato que ingresaremos pueden ser de texto, password, checkbox, radio, submit, file, date, email, etc.</li>
+                <li><b>placeholder</b>: es el texto que esta dentro del input indicando que debe hacer el usuario en ese espacio</li>
+                <li><b>name</b>:El atributo name en un elemento input de HTML se utiliza para darle un nombre al campo de entrada. Este nombre es importante porque se utiliza para identificar el campo cuando se envía el formulario al servidor, ya sea mediante el método GET o POST. </li>
+                <li><b>value</b>: se utiliza para especificar el valor inicial del campo de entrada. Este valor se mostrará en el campo cuando la página se cargue por primera vez y puede ser modificado por el usuario.</li>
+                <li>
+                <b>required</b>: Indica que el control de entrada es obligatorio y no se puede enviar el formulario si está vacío. Este atributo es especialmente útil para campos de texto y otros controles que requieren entrada del usuario.
+                </li>
+                <li><b>disabled</b>: Indica que el control de entrada está deshabilitado y no se puede utilizar. Los controles deshabilitados no se envían cuando se envía el formulario.</li>
+            </ul>
+        </li>
+
+    </ol>
+
+    <h3>Ejemplo:</h3>
+
+    <form class="contact-form" method="post" action="">
+
+        <input type="text" placeholder="Ingrese su nombre" name="nombre" required>
+
+        <input type="email" placeholder="Ingrese su email" name="correo" required>
+
+        <textarea placeholder="Ingrese su comentario" name="comentarios" cols="30" rows="10"></textarea required>
+
+        <input type="submit">
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+</body>
+</html>

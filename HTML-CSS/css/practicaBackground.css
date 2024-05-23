@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(240, 255, 205);
+}
+.article1{
+    width: 80%;
+    height: 50vh;
+    border: thin solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: radial-gradient(rgb(249, 249, 155), rgb(251, 171, 171));
+
+}
+.article1 h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.content-card{
+    width: 90%;
+    height: 75%;
+    /* border: thin solid gray; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    box-sizing:border-box;
+    text-align: center;
+}
+.cards{
+    width: 250px;
+    height: 90%;
+    border: thin solid black;
+    display: inline-block;
+    margin: 15px 10px 0 10px;
+    text-align: center;
+    box-shadow: 0rem 0rem 1rem 0.01rem rgb(136, 126, 34) ;
+
+}
+.cards .img-content{
+    width: 90%;
+    height: 50%;
+    background-image: url(../assets/bob.png);
+    background-size: 110px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    /* border: thin solid black; */
+}
+.cards p{
+    margin: 5px;
+}
+.cards h3{
+    margin: 0;
+}
+.cards button{
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+    background-color: yellow;
+    font-size: 16px;
+}

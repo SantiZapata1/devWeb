@@ -1,0 +1,521 @@
+<!-- docs https://docs.google.com/document/d/1WxMaH_em0umKWNt3--J5tmNv24ZjfQj1dSs5E-i019s/edit -->
+
+<!DOCTYPE html>
+
+<!-- etiqueta principal -->
+<html lang="en">
+
+    <!-- cabezal de la pagina-->
+    <head>
+        <!-- informacion meta que habla de la pagina para los motores de busqueda-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="descripcion" content="en esta pagina aprendo HTML">
+
+        <!-- enlace a codigo CSS -->
+        <link rel="stylesheet" href="../assets copy/styles.css">
+
+        <link href='../img copy/logoHtml.png' rel='apple-touch-icon'>
+        <link href='../img copy/terminal.svg' rel='icon'>
+
+        <title>HTML</title>
+    </head>
+
+
+    <!-- cuerpo de la pagina -->
+    <body>
+        <h1 id="inicio">HTML</h1>
+
+        <div class="arrow">
+            <a href="indexCss.html#principal-section">
+                <img src="../img/pointer.svg" alt="puntero para volver al temario" width="35px">
+            </a>
+        </div>
+        
+        <a href="html.html#final" title="enlace que lleva al final de la pagina">ir al final</a>
+
+        <h2>temario</h2>
+
+        <ul>
+            <li><a href="#etiquetas-semanticas-estructurales">etiquetas semanticas estructurales</a></li>
+            <li><a href="#bloque-linea">elementos de bloque vs de linea</a></li>
+            <li><a href="#enlazar-css-js">Enlazar CSS y JS al HTML</a></li>
+            <li><a href="#imagenes">imagenes</a></li>
+            <li><a href="#listas">listas</a></li>
+            <li><a href="#tablas">tablas</a></li>
+            <li><a href="#enlaces">Enlaces</a></li>
+            <li><a href="#elementos-interactivos">elementos interacticos</a></li>
+            <li><a href="#audio-video">Audio y video</a></li>
+            <li><a href="#iframes">iFrames</a></li>
+            <li><a href="#formularios">formularios</a></li>
+            <li><a href="#patterns">Patterns</a></li>
+            <li><a href="#meta">etiquetas meta</a></li>
+            <li><a href="#accesibilidad-web">accesibilidad web</a></li>
+        
+        </ul>
+
+        <!-- diferentes etiquetas semanticas estructurales -->
+        <h2 id="etiquetas-semanticas-estructurales">etiquetas semanticas estructurales</h2>
+
+        <p>
+            Todas estas etiquetas contenedoras sirven para almacenar informacion, pero cada una tiene su funcion semantica,
+            osea que segun el contenido que neesitamos almacenar usaremos una u otra. <br>
+            <span class="importante">no hay una sola forma de usarlo, ni tienen que haber una sola de cada una por pagina, estas se combinan segun nuestras necesidades</span>
+        </p>
+
+        <div>
+            <h4>Tabla periodica de las diferentes etiquetas HTML</h4>
+            <img src="../img copy/htmlTags.png" alt="etiquetas HTML">
+        </div>
+
+
+        <ul>
+            <li><b>div</b> Cuando necesitas agrupar y contener elementos  <span class="importante">sin un significado semántico específico</span>. El div es una etiqueta de propósito general y se utiliza comúnmente para aplicar estilos o manipular contenido con JavaScript</li>
+            <li><b>header</b>  Para definir la   <span class="importante">cabecera</span> de una sección o de la página en general. Puede contener elementos como títulos, logotipos y enlaces de navegación</li>
+            <li><b>main</b> Para contener el contenido principal de la página (excluyendo la cabecera, pie, etc.). Deberías tener una sola instancia de main en tu documento.</li>
+            <li><b>footer</b> Para representar el pie de una sección o de la página en general. Puede contener información de derechos de autor, enlaces de contacto, etc.</li>
+            <li><b>nav</b> Para definir un conjunto de enlaces de navegación, como menús y barras de navegación.</li>
+            <li><b>article</b> Para definir un contenido independiente y autocontenido, como un artículo o publicación. Deberías usar article cuando el contenido pueda existir de manera independiente y tenga su propia identidad.</li>
+            <li><b>aside</b> Para contenido relacionado pero que es tangencial al contenido principal, como barras laterales, anuncios, etc.</li>
+            <li><b>section</b> Para agrupar contenido relacionado dentro de una sección. Deberías usar section cuando tengas contenido que forme una unidad temática</li>
+
+        </ul>
+
+        <p>La clave es utilizar estas etiquetas de manera semántica para estructurar tu documento de una manera significativa y comprensible tanto para los desarrolladores como para las tecnologías de asistencia y los motores de búsqueda. <span class="importante">Al elegir la etiqueta correcta para cada parte de tu página, estás comunicando claramente la relación y el propósito de cada sección de tu contenido</span>.</p>
+
+        <hr>
+        
+        <!-- Elementos en bloque vs en linea -->
+        <h2 id="bloque-linea">elementos de bloque vs elementos de linea</h2>
+
+        <div style="background-color: #BED754;">
+            Las etiquetas de <b>bloque</b> ocupan todo el espacio horizontal
+        </div>
+
+        <span style="background-color:lightgreen">
+            Las etiquetas de <b>linea</b> ocupan solo el espacio necesario
+        </span>
+
+        <hr>
+
+        <!-- enlazar CSS y HTML -->
+        <h2 id="enlazar-css-js">Enlazar CSS y JS al HTML</h2>
+
+        <p>
+            Para realizar esto, la mejor practica es hacerlo enlazando los links de cada archivo externo
+            con <code>link</code> para el archivo css en el head de la pagina, y con <code>script</code> para el 
+            archivo JavaScript al final del body <br>
+            <span class="importante">Estos archivos se suelen colocar en la carpeta "Assets", ya que en esta se encuentran todos aquellos archivos estaticos que no cambian en tiempos de ejecucion.</span>
+        </p>
+
+        <hr>
+
+        <!-- imagenes -->
+        <h2 id="imagenes">imagenes</h2>
+
+        <p>
+            Se usa la itiqueta <b>img</b> para localizar con el atributo "src" a la imagen, y con el atributo "alt" se conoca un texto alternativo en caso de que haya problemas con cargar la imagen <br>
+            Sus atributos de ancho y alto se lo realiza ajustando los valores de los atributos <code>width y height</code> desde el codigo CSS <br><br>
+            <strong> configuracion para que una imagen sea responsive:</strong>
+            <code>
+                <br>
+                img{<br>   
+                    max-width: 100%;<br>
+                    height: auto;<br>
+                } <br>
+            </code>
+        </p>
+
+        <img src="../img copy/logoHtml2.png" alt="texto alternativo para imagen PNG">
+        <img src="../img copy/gifCodigo.gif" alt="texto alternativo para GIF">
+        <img src="../img copy/logoClaro.svg" alt="texto alternativo para SVG">
+
+        <hr>
+
+        <!-- Listas -->
+
+        <h2 id="listas">listas</h2>
+
+        <h3>ordenadas</h3>
+
+        <p> se usa la etiqueta <code>ol</code> de order list para englobar cada  <code>li</code> o list item <br>
+        Se le pueden colocar atributos como:</p>
+
+        <ol>
+            <li>reversed (la lista va en orden inverso)</li>
+            <li>start="indica numero de inicio"</li>
+            <li>type="indica tipo de vineta"</li>
+            <li>etc</li>
+        </ol>
+
+        <section>
+            <h4>ejemplos de list</h4>
+
+            <ol reversed>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ol>
+
+            <ol start="10">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ol>
+            <ol type="A">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ol>
+            
+        </section>
+
+        <h3> desordenadas</h3>
+
+        <p> se usa la etiqueta "ul" de unorder list para englobar para "li" o list item <br>
+            Se le pueden colocar atributos como:</p>
+
+        <ul>
+            <li>type="tipo de vineta"</li>
+            <li>ni idea</li>
+            <li>si hay</li>
+            <li>otros atributos xd</li>
+        </ul>
+
+        <hr>
+
+        <!-- Tablas -->
+        <h2 id="tablas">tablas</h2>
+
+        <p>
+            La etiqueta principal es <code>table</code> y dentro de ella se definen las <code>tr</code> "table row" y las <code>td</code> "table data"<br>
+            Con <code>colspan</code> combinamos columnas y con <code>rowspan</code> combinamos filas <br>
+            Si se le quiere dar un poco mas de semantica a la tabla se puede usar una estructura un poquin mas compleja para tablas
+        </p>
+
+        <h4>ejemplo de tabla</h4>
+
+        <table>
+
+            <tr>
+                <td></td>
+                <td>columna 1</td>
+                <td>columna 2</td>
+                <td>columna 3</td>
+            </tr>
+            <!-- fila 1-->
+            <tr>
+                <td>fila 1</td>
+                <td>nombre</td>
+                <td>edad</td>
+                <td>direccion</td>
+            </tr>
+
+            <!-- fila 2 -->
+            <tr>
+                <td>fila 2</td>
+
+                <td>santi</td>
+                <td>20</td>
+                <td>vedia 2000</td>
+            </tr>
+
+            <!-- fila 3 -->
+            <tr>
+                <td>fila 3</td>
+
+                <td>juan</td>
+                <td>30</td>
+                <td>sarmiento 200</td>
+            </tr>
+
+            <!-- fila 4 -->
+            <tr>
+                <td>fila 4</td>
+
+                <td>pedro</td>
+                <td>40</td>
+                <td>salta 300</td>
+            </tr>
+
+        </table>
+
+        <hr>
+
+
+        <!-- enlaces -->
+        <h2 id="enlaces">Enlaces</h2>
+
+        <p>etiquetas que sirven para ir a diferentes direcciones, como distintos archivos HTML por ejemplo, se los realiza con la etiqueta <code>a</code> y en su atributo <code>href</code> ira la direccion o url <br>
+        pueden ser referencias <i>internar</i> o <i>externas</i>, cuando se trabajan con enlaces externos se una el atributo <code>target="_blank"</code> para abrir la pestana en otra ventana, cuando son enlaces internos no hace falta este atributo ya que se entiende que estamos navegando por la misma pagina web.
+        </p>
+
+        <h4>ejemplos de diferentes tipos de enlaces: otro html de la pagina, pagina externa, imagenes como links, enlaces a diferentes secciones del html</h4>
+
+        <!-- diferentes tipos de enlaces -->
+        <ul>
+            <li><a href="hola.html"> ir a otra pagina interna</a></li>
+            <li><a href="https://www.youtube.com/watch?v=-oK6zL01fNM&ab_channel=jonmircha" target="_blank">curso de HTML de jormircha</a></li>
+            <li><a href="https://www.youtube.com" target="_blank"> 
+                <img src="../img copy/youtubeLogo.svg" alt="ir a curso de html" width="40px" height="auto">
+            </a></li>
+            <li><a href="html.html#inicio">volver al inicio</a></li>
+        </ul>
+
+        <p class="importante">para generar el efecto de slide fluido se usa: 
+            <code>html{
+            scroll-behavior:smooth;
+            }</code>
+        </p>
+
+        <hr>
+
+        <!-- elementos interactivos -->
+        <h2 id="elementos-interactivos">elementos interacticos</h2>
+
+        <p>A estos elementos interacticos se les puede agregar eventos de JavaScript para hacer paginas web interativas</p>
+
+        <!-- botonces -->
+        <h3>botones</h3>
+        <button onclick="alert('haz hecho click ')">Esto es un boton que imprime una alerta con js</button>
+      
+        <h3>acordeones</h3>
+
+        <p>los acordeones son estructuras que sirven para organizar informacion, como por ejemplo articulos, sus partes son:
+            <i>details(cuerpo), summary (titulo) y article por ej (contenido)</i>
+        </p>
+
+        <!-- acordeones -->
+        <details>
+
+            <summary>titulo del acordeon</summary>
+
+            <article>
+                <h4>articulo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita placeat necessitatibus non minus aliquam. Doloremque aliquid magni dolore atque reprehenderit! Qui, tenetur excepturi? Alias nobis, unde quibusdam voluptates rem atque!</p>
+                <img src="img copy/logoCss2.jpeg" alt="texte alt" width="300px">
+            </article>
+
+        </details>
+
+        <br>
+
+        <!-- ventanas de dialogos -->
+        <h3>ventanas de dialogo</h3>
+
+        <dialog open >ventana de dialogo emergente (no es soportada por todos los navegadores)</dialog>
+
+        <br><br><br><br>
+
+        <hr>
+
+        <!-- audio y video -->
+        <h2 id="audio-video">Audio y video</h2>
+
+        <p>
+            Las etiquetas de audio y video busca localmente el archivo y con el atributo <code>controls</code> habilitamos las opciones para visualizar y controlar el audio
+        </p>
+
+        <audio src="media/WhatsApp Ptt 2023-12-02 at 13.30.05.ogg" controls></audio> <br>
+        <video src="media/WhatsApp Video 2023-12-03 at 04.33.38.mp4" controls width="200px"> </video>
+
+        <hr>
+
+        <!-- iframes -->
+        <h2 id="iframes">iFrames</h2>
+        <p>Sirven para mostrar contenido de paginas externas</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9914410253596!2d2.2919063769678605!3d48.858373600706976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1ses-419!2sar!4v1701702098346!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <hr>
+
+        <!-- formularios -->
+        <h2 id="formularios">formularios</h2>
+
+        <p>El HTML de un formulario web está compuesto por uno o más controles de formulario, pueden ser campos de texto de una o varias líneas, cajas desplegables, botones, casillas de verificación o botones de opción, y se crean principalmente con el elemento <code>input</code>, aunque hay algunos otros elementos que también hay que conocer. <br> 
+        <span class="importante">Al elemento <code>input</code> se le agregan diferentes atributos para adaptarlo a nuestras necesidades</p></span>
+
+        <h4>ejemplo de input sin atributos:</h4>
+        <input>
+
+        <h3>atributos</h3>
+
+        <ul>
+            <li><b>type</b> tipo de dato del input, mas abajo se desarrollan los diferentes inputs</li>
+            <li><b>placeholder</b> texto predeterminador que esta cuando el input esta vacio <input type="text" placeholder="placeholder"></li>
+            <li><b>value</b> El valor proporcionado por el atributo value es el valor que se enviará al servidor cuando se envíe el formulario. Es el valor predetenerminado del input, ejemplo "si"</li>
+            <li><b>name</b>  se utiliza para identificar y referenciar los datos enviados cuando se envía un formulario. Este atributo asigna un nombre a la entrada de datos para que pueda ser identificado por el servidor cuando el formulario se envía.</li>
+            <li><b>action</b> especifica la URL a la que se enviarán los datos del formulario cuando el usuario lo envíe</li>
+            <li><b>method</b> Especifica el método HTTP utilizado para enviar los datos del formulario. Los dos métodos más comunes son "GET" y "POST". La elección del método afecta cómo se transmiten y procesan los datos. Cuando se utiliza "GET", los datos se adjuntan a la URL, mientras que "POST" envía los datos en el cuerpo de la solicitud</li>
+            <li><b>id</b> identificador de la etiqueta</li>
+            <li><b>required</b> indica que el campo es obligatorio de rellenar</li>
+        </ul>
+
+        <h3> distintos tipos de inputs</h3>
+
+        <p>
+            HTML proporciona varios tipos de elementos de entrada (input) que permiten a los usuarios ingresar datos de diversas formas.Además, puedes combinar el elemento input con otros elementos y atributos para crear formularios más complejos y personalizados. La lectura de las entradas a los inputs se la realiza con JavaScript<br>
+            <span class="importante">Es importante entender los atributos de los inputs para poder implementarlos de forma correcta</span>
+        </p>
+
+        <!-- distintos tipos de inputs -->
+        <h4>texto</h4>
+        <input type="text" name="nombre" placeholder="Input de tipo texto"><br>
+        <label for="contrasena">oculta el contenido:</label>
+        <input type="password" name="contrasena" placeholder="Input de tipo password"><br>
+        <label for="coreeo">debe cumplir con cierta estructura:</label>
+        <input type="email" name="correo" placeholder="Input de tipo email"><br>
+        <textarea placeholder="textarea" cols="20" rows="3"></textarea>
+
+
+        <h4>checkboks</h4>
+        <input type="checkbox" name="suscribirse" value="si"> suscribirme
+        <input type="checkbox" name="suscribirse" value="si"> no suscribirme<br>
+
+        <h4>radios</h4>
+        <input type="radio" name="sexo" value="masculino"> Masculino 
+        <input type="radio" name="sexo" value="femenino"> femenino <br>
+
+        <h4>file</h4>
+        <input type="file" name="archivo"> <br>
+
+        <h4>hora y fecha</h4>
+        <input type="date" name="fecha"> <br>
+        <input type="time" name="hora"> <br>
+
+        <h4>rango</h4>
+        <input type="range"><br>
+
+        <h4>color</h4>
+        <input type="color"><br>
+
+        <h4>enviar y borrar</h4>
+        <p>Estos son muy importantes ya que sirven para enviar los datos del formulario o borrar su contenido si se desea</p>
+        <input type="submit">
+        <input type="reset"><br>
+
+
+        <h4>select options</h4>
+
+        <label for="select">seleccione sus skills</label>
+        <select name="select">
+            <option>html</option>
+            <option>css</option>
+            <option>js</option>
+            <option>react</option>
+        </select>
+
+
+        <!-- etiqueta label -->
+        <h3>label</h3>
+        <p>etiqueta para explicar cada input, con su atributo <i>"for"</i> referenciamos a que input esta asociada ese <code>label</code></p>
+
+
+        <h4>ejemplo de formulario:</h4>
+
+        <!-- ejemplo de formulario -->
+        <form action="https://formsubmit.co/santiezapata.2@gmail.com" method="POST" class="form">
+
+            <label for="usuario">usuario:</label>
+            <input type="text" name="usuario" id="usuario"><br>
+
+            <label for="contra">contra:</label>
+            <input type="password" name="contrasena" id="contra"><br>
+
+            <input type="submit">
+            <input type="reset"><br>
+
+        </form>
+
+        <!-- URLs con los diferentes metodos post y get -->
+        <p>Al enviar los datos la url con el metodo <code>get</code> sera por ejemplo 
+            <mark>https://jonmircha.com/?usuario=s&contrasena=s</mark><br>
+            y con el metodo <code>post</code> la salida seria:
+            <mark>https://jonmircha.com/</mark>
+        </p>
+
+
+        <h3>selects, radios y checkboks</h3>
+
+        <p><strong>Dato: </strong>cada uno tiene su propia implementacion de diferentes atributos para distintas aplicaciones de cada tipo de input</p>
+
+        <h4>ejemplos:</h4>
+
+        <ol>
+            <li>requered</li>
+            <li>checked</li>
+            <li>selected</li>
+            <li>etc</li>
+        </ol>
+
+        <a href="https://htmlreference.io/forms/" target="_blank">mas sobre estos inputs</a>
+        
+        <hr>
+
+        <!-- expresiones regulares -->
+        <h2 id="patterns">Patterns</h2>
+
+        <p>
+            Las expresiones regulares (también conocidas como regex o regexp) son patrones de búsqueda utilizados para realizar operaciones de búsqueda y manipulación de cadenas de texto. Aunque no son específicas de HTML, se pueden usar en combinación con HTML para realizar búsquedas y manipulaciones más avanzadas en el código HTML.
+        </p>
+
+        <hr>
+
+        <!-- etiquetas metas de metadatos -->
+        <h2 id="meta">etiquetas meta</h2>
+        <p>
+            Las metaetiquetas, etiquetas meta o elementos meta (también conocidas por su nombre en inglés, meta tags) son etiquetas HTML que se incorporan en el encabezado de una página web y que resultan invisibles para un visitante normal, pero de gran utilidad para navegadores u otros programas que puedan valerse de esta información.
+
+            Su propósito es el de incluir información (metadatos) de referencia sobre la página: autor, título, fecha, palabras clave, descripción, etc.
+
+            Características
+            Las meta tags son unas etiquetas pertenecientes al HTML que se deben escribir dentro del tag general head y que lo podemos definir como líneas de código que indican a los buscadores que indexan la página por qué términos debe ser encontrada. Dependiendo de la utilización, caracterización y objetividad de dichos meta, más otros factores SEO se puede conseguir una excelente posición en el listado resultante de una búsqueda.
+
+            Según varios estudios,1​ cuando un navegante realiza una búsqueda no suele ir más allá del resultado 20, pues entre estos primeros puestos suele encontrar aquello que busca. Para quedar entre estos puestos es conveniente tener unos metas optimizados. 2​
+        </p>
+
+        <hr>
+
+        <!-- accesibilidad web -->
+        <h2 id="accesibilidad-web">accesibilidad web</h2>
+
+        <p>La accesibilidad web se refiere a la práctica de diseñar y desarrollar sitios web y aplicaciones de manera que sean accesibles y utilizables por todas las personas, independientemente de sus capacidades o discapacidades. El objetivo es garantizar que todas las personas, incluyendo aquellas con discapacidades visuales, auditivas, motoras o cognitivas, puedan interactuar de manera efectiva con el contenido en línea.
+        Para garantizar la accesibilidad web, se han desarrollado pautas y estándares, como las Pautas de Accesibilidad al Contenido Web (WCAG, por sus siglas en inglés), que proporcionan criterios y recomendaciones específicas para crear contenido web accesible. Estas pautas son ampliamente adoptadas y seguidas por desarrolladores y diseñadores web en todo el mundo.
+        </p>
+
+        <p>Preocuparnos por estas cosas le da mucha calidad al sitio web, ya que las hace inclusivas para todas las personas, es una buena practica darle importancia a estos detalles</p>
+
+        <p>Estas practicas las implementamos con multiples atributos en las etiquetas como por ejemplo: <span class="importante">no le di bola a esto jjjje</span></p>
+        
+        <h4>ejemplos:</h4>
+        <ol>
+            <li>roles</li>
+            <li>index</li>
+            <li>area label</li>
+            <li>etc</li>
+        </ol>
+
+        <p>Cada una sirve para hacer que cada parte sea inclusiva para las distintas discapacidades</p>
+
+
+        <hr>
+
+
+    <p><a href="html.html#inicio">volver al inicio</a></p>
+
+
+        <!-- final de la pagina -->
+        <br><br><br>
+        <p id="final">fin de la pagina web :)</p>
+
+
+
+        <!-- enlace a codigo JS -->
+        <script src="assets copy/codes.js"></script>   
+    
+    </body>
+</html>
+
+    

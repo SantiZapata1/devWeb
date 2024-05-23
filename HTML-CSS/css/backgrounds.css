@@ -1,0 +1,99 @@
+body{
+    background-image: linear-gradient(lightblue 15%, yellow 40%, green);
+}
+.box{
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+    width: 300px;
+    height: 300px;
+    border: medium solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-color{
+    background-color: rgb(212, 254, 183);
+}
+
+.bg-image{
+    background-image: url(../assets/image2.jpeg);
+}
+.bg-size-manual{
+    background-size: 300px 300px;
+}
+.bg-cover{
+    background-image: url(../assets/image2.jpeg);
+    background-size: cover ;
+    height: 300px;
+}
+.bg-contain{
+    background-image: url(../assets/image2.jpeg);
+    background-size: contain ;
+}
+.bg-repeat{
+    background-image: url(../assets/image2.jpeg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.bg-repeat2{
+    background-image: url(../assets/image2.jpeg);
+    background-size: 100px;
+}
+
+.bg-position{
+    background-image: url(../assets/image2.jpeg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 200px 200px;
+}
+.bg-clip{
+
+    background-image: url(../assets/image2.jpeg);
+    background-color: aqua;
+    background-size: 150px 150px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+
+}
+.bg-origin{
+    background-image: url(../assets/image2.jpeg);
+    background-color: aqua;
+    background-size: 150px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+.bg-attach{
+    background-image: url(../assets/image2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 90%;
+    height: 50vh;
+}
+
+.bg-art{
+
+    margin: 20px;
+    border: thin solid black;
+    width: 70vw;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: aliceblue;
+    background: url(../assets/bob.png) repeat left/15%, url(../assets/fondoExtrano.png)  no-repeat center/cover fixed;
+
+
+}
+
+.messi{
+    width: 50%;
+    height: 50vh;
+    background-color: aliceblue;
+    margin: auto;
+    background-image: url(../assets/spiderman.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:top;
+}

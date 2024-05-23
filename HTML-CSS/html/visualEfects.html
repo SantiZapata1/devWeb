@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/visualEfects.css">
+    <title>visual efects</title>
+
+</head>
+<body>
+
+    <a href="indexCss.html#temario-css">
+        <img src="../img/pointer.svg" alt="puntero para volver al temario" width="35px">
+    </a>
+
+    <h1>Efectos visuales</h1>
+
+    <h2>sombras</h2>
+
+    <h3>propiedad <code>box-shadow</code></h3>
+    <p>La propiedad CSS box-shadow añade efectos de sombra alrededor del marco de un elemento. <br>
+    <h3>propiedad <code>text-shadow</code></h3>
+    <p>La propiedad CSS text-shadow añade efectos de sombra alrededor del texto de un elemento. <br>
+
+    <h4>ejemplo:</h4>
+
+    <code>box-shadow: h-offset v-offset blur spread color inset;</code><br>
+    <code>text-shadow: h-offset v-offset blur spread color inset;</code>
+    <ul>
+        <li>h-offset: Especifica el desplazamiento horizontal de la sombra. Un valor positivo mueve la sombra hacia la derecha, y un valor negativo la mueve hacia la izquierda.</li>
+        <li>v-offset: Especifica el desplazamiento vertical de la sombra. Un valor positivo mueve la sombra hacia abajo, y un valor negativo la mueve hacia arriba.</li>
+        <li>blur: Especifica la cantidad de desenfoque aplicada a la sombra. Un valor más alto crea una sombra más difusa.</li>
+        <li>spread: Especifica la extensión de la sombra. Un valor positivo la hace más grande, y un valor negativo la hace más pequeña.</li>
+        <li>color: Especifica el color de la sombra.</li>
+        <li>inset: Opcional. Si está presente, indica que la sombra debe estar en el interior del elemento en lugar de en el exterior.</li>
+    </ul>
+
+    <div class="box box-shadow text-shadow">sombras</div>
+
+    <h3>propiedad <code>filter() drop-shadow</code></h3>
+
+    <h4>ejemplo</h4>
+    <code>    filter: drop-shadow(1rem 1rem 1rem red);
+    </code><br>
+
+    <img src="assets/bob.png" alt="" class="filter-img">
+
+    <br><br>
+    <p>El box shadow aplica la sombra a la caja contenerora, pero con el filter drop-shadow podemos dar sombra al contorno de imagenes con transparencia</p>
+
+    <hr>
+
+    <h2>Degradados</h2>
+
+    <div class="gradient">
+        <h1>title</h1>
+    </div>
+
+    <h3>lineal</h3>
+    <p>Para dar degradados lineales, al elemento se le aplica a traves de <code>backgrund-image</code> la propiedad linear-gradient() donde se indica la inclicacion de los colores y los colores a utilizar. Tambien con porcentajes indicamos que tanto espacio debe ocupar cada color. </p>
+    <div class="box linear-gradient" >    
+    </div>
+
+    <h3>radial</h3>
+    <p>
+        Para degradados radiales se hace de la misma forma pero con la funcion <code>background-image: radial-gradient()</code>
+    </p>
+    <div class="box radial-gradient"></div>
+
+    <h3>conicos</h3>
+    <div class="box conic-gradient"></div>
+
+    <p><strong>conclusion</strong>
+        Segun que degradado deseamos implementar, indicamos grados de inclinacion, colores y rangos de los colores
+    </p>
+
+    <h3>Repetir degradados</h3>
+
+    <div class="box repeat-linear"></div>
+    <div class="box repeat-radious"></div>
+    <div class="box repeat-conic "></div>
+
+    <h2> Filtros</h2>
+
+    <p>Existen diferentes filtros que se les puede aplicar a las imagenes, para editar sus propiedades.</p>
+
+    <p><code>filter: blur(x): </code>difumina o pone borrosa la imagen tanto como se lo indiquemos</p>
+    <div class="filtros blur">
+        <img src="img/messi.webp" alt="">
+    </div>
+    <p><code>filter: brightness(x):  </code>cambia la luminosidad de la imagen</p>
+    <div class="filtros brightness">
+        <img src="img/messi.webp" alt="">
+    </div>
+    <p><code>filter: contrast(x): </code>cambia el contraste de la imagen</p>
+    <div class="filtros contrast">
+        <img src="img/messi.webp" alt="">
+    </div>
+    <p><code>filter: grayscale(x):  </code>aplica la escala de grises que les apliquemos</p>
+    <div class="filtros grayscale">
+        <img src="img/messi.webp" alt="">
+    </div>
+    <p><code>filter: sepia(x):  </code> aplica el filtro sepia tan intenso como lo indiquemos</p>
+    <div class="filtros sepia">
+        <img src="img/messi.webp" alt="">
+    </div>
+    <p><code>filter: invert(x):  </code> invierte los colores originales tanto como lo indiquemos</p>
+    <div class="filtros invert">
+        <img src="img/messi.webp" alt="">
+    </div>
+    <p><code>filter: opacity(x):  </code> le aplica opacidad a la imagen</p>
+
+    <p>Tambien se puede aplicar filtros multiples indicando cada propiedad seguidos por comas</p>
+
+    <h3>Filtros a colores</h3>
+    <p>No solo se le puede aplicar estos filtros a las imagenes, sino que tambien a los colores, con la propiedad <code>backdrop-filter: ;</code></p>
+
+
+    <br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body{
+    background-image: linear-gradient(lightblue, rgb(249, 140, 128));
+}
+li{
+  display: inline-block;
+  width: 40%;
+}
+.content-image{
+    background-color: aquamarine;
+    display: inline-block;
+    border-radius: 50px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+
+}
+pre{
+    color: rgb(150, 247, 5);
+    background-color: gray;
+    display: inline-block;
+    padding: 5px;
+}
+.card{
+    border: thin solid black;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    text-align: center;
+    background-color: sandybrown;
+}
+.card img{
+    width: 300px;
+    height: 180px;
+    background-color: rgb(66, 158, 238);
+}
+
+.fill {
+    object-fit: fill;
+  }
+  
+  .contain {
+    object-fit: contain;
+  }
+  
+  .cover {
+    object-fit: cover;
+  }
+  
+  .none {
+    object-fit: none;
+    object-position: 90% 100%;
+  }

@@ -1,0 +1,61 @@
+body{
+    background-image: linear-gradient(#D6DAC8,#EFBC9B,rgb(249, 114, 114));
+}
+@font-face{
+    font-family: "Montserrat";
+    src: url("../assets//Montserrat.ttf") format("ttf");
+}
+@font-face{
+    font-family: "santi";
+    src: url("../assets/fonts/Inconsolata-Black.ttf") format(truetype);
+}
+.font-propia{
+    font-family: santi;
+}
+.Montserrat{
+    font-family: "Montserrat",cursive;
+}
+.Inconsolata{
+    font-family: 'Inconsolata', monospace;
+}
+.text-styles{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    color: steelblue;
+    text-transform: capitalize;
+}
+pre,code{
+    background-color: gray;
+    color: greenyellow;
+    padding: 3px;
+}
+
+.font-size{
+    font-size: 18px;
+}
+.font-weight{
+    font-weight: 200;
+}
+.font-style{
+    font-style: italic;
+}
+.line-height{
+    line-height: 30px;
+}
+.font-properties,
+.another-text-styles
+{
+    line-height: 30px;
+    font-size: 18px;
+    list-style:circle;
+    width: fit-content;
+    /* border: thin solid gray; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 25px;
+    background-color: rgb(244, 194, 188) ;
+    border-radius: 15px;
+    border: thin solid gray;
+    padding: 40px;
+}

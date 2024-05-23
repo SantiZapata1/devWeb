@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- linkeamos hojas de estilo e icono de la pagina -->
+        <link rel="stylesheet" href="../css/styles.css"> 
+        <link href='../img/cssLogo.svg' rel='icon'>
+
+        <title>HTML Y CSS</title>
+
+    </head>
+ 
+    <body>
+
+        <div class="arrow">
+            <a href="indexCss.html#principal-section">
+                <img src="../img/pointer.svg" alt="puntero para volver al temario" width="35px">
+            </a>
+        </div>
+
+        <section id="principal-section" class="radial-gradient">
+            <!-- Titulo principal-->
+            <H1 class="gradient-text">HTML Y CSS</H1>
+
+            <!-- temario -->
+            <article id="temario-css" class="css-temary radial-gradient2 gradient-border">
+                <h2>Temario del curso</h2>
+                <ol>
+                    <li><a href="html.html">HTML o "Lenguaje de marcado de hipertexto"</a></li>
+                    <li><a href="indexCss.html#definicion">Introduccion a CSS</a></li>
+                    <li><a href="indexCss.html#selectores-basicos">selectores basicos</a></li>
+                    <li><a href="indexCss.html#selectores-avanzados">selectores avanzados</a></li>
+                    <li><a href="indexCss.html#pseudoclases">Pseudoclases</a></li>
+                    <li><a href="indexCss.html#pseudoelementos">Pseudoelementos</a></li>
+                    <li><a href="indexCss.html#algoritmo-css">Algoritmo CSS</a></li>
+                    <li><a href="indexCss.html#normalizacion">Normalizacion</a></li>
+                    <li><a href="indexCss.html#prefijos">Prefijos</a></li>
+                    <li><a href="indexCss.html#seo">seo</a></li>
+                    <hr>
+                    <li><a href="boxModel.html" >Box model</a> </li>
+                    <li><a href="positions.html" >Position y z-index </a></li>
+                    <ul>
+                        <li><a href="positions-examples.html" >Practica</a></li>
+                    </ul>
+                    <li><a href="colors.html" >Colores y opacidad</a></li>
+                    <li><a href="units.html" >Unidades de medida</a></li>
+                    <ul>
+                        <li><a href="units-practice.html" >Practica</a></li>
+                    </ul>
+                    <li><a href="variables-functions.html" >Variables y funciones</a></li>
+                    <li><a href="fonts-text.html" >Estilos de texto y fuente</a></li>
+                    <li><a href="border-outline.html" >border y outline</a></li>
+                    <li><a href="backgrounds.html" >Backgrounds</a></li>
+                    <ul>
+                        <li><a href="practicaBackground.html" >Practica</a></li>
+                    </ul>
+                    <li><a href="images.html" >Imagenes</a></li>
+                    <li><a href="list.html" >Estilos en Listas</a></li>
+                    <li><a href="FormExample.html" >Formularios</a></li>
+                    <li><a href="visualEfects.html" >visual efects </a></li>
+
+                    <ul>
+                        <li><a href="onePage.html" >Practica One page</a></li>
+                    </ul>
+                    <hr>
+                    <li><a href="#transition">Transiciones</a></li>
+                    
+                </ol>
+
+                
+            </article>
+        </section>
+
+        
+
+        
+        <hr>
+
+        <!-- definicion -->
+        <article id="definicion">
+
+            <p>
+                <h2>Introduccion: </h2>
+                CSS es un lenguaje de definicion de los estilos de los elementos html de una pagina web. Define el estilo o como se veran los distintos elementos como titulos, parrafos, secciones, imagenes, etc. La combinacion de HTML y CSS permiten crear paginas web estaticas. (solo lectura)
+            </p>
+        </article>
+
+        <hr>
+        
+        <!-- selectores basicos -->
+        <article id="selectores-basicos">
+
+           
+            <h2>Selectores basicos</h2>
+            <p>Un selector es la representacion de un objeto al que nosotros le podemos aplicar los estilos, existen muchos, pero los 3 principales son:</p>
+
+            <ol>
+                <li>Selector de <b>clase: </b> Las clases generales son como plantillas con ciertos atributos especificos que se pueden asignar a distintos objetos, la ventaja de usarlas es que cada elemento puede implementar muchas clases. <br> Es importante el buen uso de las clases ya que su buena implementacion nos permitira reutilizar codigo y adaptarnos facilmente a diferentes frameworks. <br> Debemos poder nombres descriptivos a las clases, que las clases sean generales y no tan especificas, para asi mediante las combinaciones de diferentes clases se pueden disenar distintos elementos.
+                </li>
+                <li>Selector de <b>id: </b> Usando IDs para dar estilos es el mismo procedimiento que las clases, con la diferencia de que un solo elemento puede tener ese ID, no mas. dar estilos de esta forma # se considera una mala practica dar estilos de esta forma </li>
+                
+                <li>Selector de <b>etiquetas: </b>Usando los nombres de las etiquetas para dar estilos le aplicamos el mismo estilo a TODOS esos elementos del documento. </li>
+            </ol>
+
+            <p>Bloque de declaraciones {}: Al margen de que selector usemos, cada uno tiene un espacio en donde declaramos el valor de cada atributo de cada selector<br><br>
+            ejemplo: 
+            <pre>/* etiquetas code y pre */
+                code,pre{
+                    color: rgb(200, 200, 200);
+                    background-color: rgb(30, 30, 30);
+                }</pre> 
+            </p>
+
+            
+        </article>
+        
+        <hr>
+
+        
+
+        <!-- selectores avanzados -->
+
+        <article id="selectores-avanzados">
+
+           
+
+            <h2>selectores avanzados</h2>
+
+            <ol>
+                <li>
+                    <h3>hijos directos</h3>
+
+                    <p>Estos selectores se usan para darle estilo a aquellos elementos que estan dentro de otro, pero son los primeros, es decir que no hay ningun elemento entre estos y su elemento padre. Hay que tener en cuenta que si usamos este selector y el hijo no es directo no funcionara. Este selector se representa con un ">"</p>
+
+                    <h5>ejemplo:</h5>
+
+                    <code>ol > li { }</code>
+
+                    <ol class="hijos-directos">
+                        <li><b>primavera</b></li>
+                        <li><b>verano</b></li>
+                        <li><b>invierno</b></li>
+                    </ol>
+
+                    <p>Como los list items son los hijos directos del contenedor ol, se les aplican los estilos asignados.</p>
+                </li>
+
+                <li>
+                    <h3>hijos descendientes</h3>
+
+                    <p>En este caso, son los elementos que tienen elementos entre ellos y su elemento padre, es decir que no son hijos directos. Se representan con un espacio en blanco.</p>
+
+                    <h5>ejemplo</h5>
+
+                    <code>ol b{ }</code>
+
+                    <ol class="hijos-descendientes">
+                        <li><b>primavera</b> aaaaa</li>
+                        <li><b>verano</b>aaaaaaa</li>
+                        <li><b>invierno</b>aaaaaa</li>
+                    </ol>
+
+                    <p>Los elementos b que esten en algun lugar dentro del ol, absorveran los atributos asignados.</p>
+                </li>
+                <li>
+                    <h3>selector de hermanos (general)</h3>
+                    <p>El combinador ~ separa dos selectores hermanos y selecciona el segundo elemento sólo si está precedido por el primero y ambos comparten un padre común. No hace falta que esten de forma consecutiva.</p>
+
+                    <h5>ejemplo</h5>
+
+                    <pre>p ~ span {
+                        color: red;
+                        font-size: 14px;
+                    }</pre>
+
+                    <br>
+                    <span>Este span no es rojo.</span>
+                    <p>Aquí hay un párrafo.</p>
+                    <small>aqui hay algo small</small><br>
+                    <span>Aquí hay un span. Es rojo porque va precedido de un párrafo y ambos comparten el mismo padre.</span>
+                </li>
+                <li>
+                    <h3>selector de hermanos adyacente</h3>
+
+                    <p>Se hace referencia a este selector como selector adyacente o selector del próximo hermano. Sólo seleccionará un elemento especificado que esté inmediatamente después de otro elemento especificado.</p>
+        
+        
+                    <h4>ejemplo</h4>
+        
+                    <pre>p + span{
+                        color: #034909;
+                        font-size: 20px;
+                    }</pre>
+        
+                    <p>hermano 1</p>
+                    <span>hermano 2</span>
+                </li>
+                <li>
+                    <h3>selectores de atributos</h3>
+
+                    <p>se usan para dar estilos a todos los elementos que tengan un atributo especifico que le indiquemos nosotros. En general, hay diferentes formas de aplicar estilos a elementos que cumplan con ciertas caracteristicas. <br>
+                    Su implementacion se realiza colocando el selctor del elemento principal seguido de corchetes que en su interior tendran la condicion que deben cumplir para que se apliquen los estilos.
+                    </p>
+        
+                    <h4>algunos ejemplos de selectores por atributos son:</h4>
+        
+                    <ul>
+                        <li>Elemento "a" que tenga el atributo title</li>
+                        <li> Elemento "a"   que coincida con cierta URL</li>
+                        <li>Elemento "a"  que su URL contenga cierta letra o palabra</li>
+                        <li>Elemento "a" que su URL comience con cierta letra o palabra</li>
+                        <li> Elemento "a" con un href que termine en ".org" </li>
+                        <li>Elementos "a" cuyo atributo class contenga la palabra "logo" </li>
+                    </ul>
+                    <img src="img/select-atributos.png" alt="imagen de selectores por atributos de los elementos" class="center">
+
+                </li>
+                <li>
+                    <h3>selector universal</h3>
+
+                    <p>Va a aplicar el estilo a todos los elementos html del documento, se designa con el simbolo "*". Tambien se la puede usar combinado con otra etiqueta para aplicar a todos los elementos que esten contenido en otro elemento</p>
+        
+                    <h5>ejemplo</h5>
+        
+                    <code>ol * {}</code>
+        
+                    <ol class="selector-universal">
+                        <li><b>primavera</b></li>
+                        <li><b>verano</b></li>
+                        <li><b>invierno</b></li>
+                    </ol>
+                </li>
+            </ol>
+
+        </article>
+
+        <hr>
+
+        <!-- pseudoclases -->
+        <article id="pseudoclases">
+
+          
+
+            <h2>Pseudo-clases</h2>
+
+            <p>
+                Las pseudoclases en CSS son selectores que te permiten seleccionar y estilizar un elemento en función de su ESTADO o POSICION dentro del documento HTML. <br> Estos estados pueden ser interacciones del usuario, como "hover" (cuando el mouse está sobre el elemento), "active" (cuando el usuario hace clic en el elemento) o "visited" (cuando el enlace ya ha sido visitado). También hay pseudoclases que se aplican a ciertos tipos de elementos, como "first-child" (primer hijo) o "nth-child" (ésimo hijo). <br>
+                
+            </p>
+
+            <h5>sitaxis:</h5>
+            <code>selector:pseudoclase { propiedad: valor; }</code>
+
+            <p>Si el objeto esta en el estado o posicion que se indica, adoptara los atributos que le indiquemos</p>
+
+            <h5>ejemplos:</h5>
+
+            <p class="hover-example">Pase por aca para ver un ejemplo de hover :)</p>
+            <button class="active-example">haga click para probar la pseudoclase "active"</button>
+
+            <section class="odd-childs border-thin">
+
+                <h4>pseudoclase para seleccionar elementos impares</h4>
+
+                <p>texto 1</p>
+                <p>texto 2</p>
+                <p>texto 3</p>
+                <p>texto 4</p>
+                <p>texto 5</p>
+                <p>texto 6</p>
+                <p>texto 7</p>
+                <p>texto 8</p>
+
+            </section>
+
+            <p>documentacion: <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes" target="new">pseudoclases</a></p>
+
+        </article>
+
+        <hr>
+
+        <!-- pseudoelementos -->
+        <article id="pseudoelementos">
+
+
+            <h2>Pseudo-elementos</h2>
+
+            <p> Al igual que las Pseudo-classes, los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte concreta del documento. <br>Por ejemplo, el pseudoelemento ::first-line selecciona solo la primera línea del elemento especificado por el selector. <br>En este caso, no importa el estado sino su UBICACION en el objeto</p>
+
+            <h5>ejemplo:</h5>
+
+            <span class="precio">1000</span>
+            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quidem fugit, adipisci officiis nesciunt optio voluptate rerum eaque animi? Praesentium at enim tempore consequatur facere vero aspernatur laboriosam minus veritatis.</p>
+
+            <p>Documentacion: <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements" target="new">pseudoelementos</a></p>
+            
+        </article>
+
+        <!-- agregacion de selectores -->
+
+        <article id="agrupacion-selectores">
+
+            <h3>agrupar selectores</h3>
+
+            <p>Cuando se desea asignar el mismo estilo a diferentes elementos se usa la coma "," para indicar que el bloque de propiedades se le asigna a todos los elementos que pongamos</p>
+
+            <h5>ejemplo:</h5>
+
+<pre>
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores input[type="submit"]
+{
+    background-color: lightgray;
+    display: block;
+    width: 200px;
+    margin-top: 5px;
+}
+</pre>
+            <form class="form-agrupar-selectores">
+
+                <input type="text" placeholder="ingrese su nombre">
+                <input type="email" placeholder="ingrese su email">
+                <input type="submit">
+
+            </form>
+
+        </article>
+
+        <hr>
+
+        <!-- el algoritmo css -->
+
+        <article id="algoritmo-css">
+
+          
+
+            <h2>El algoritmo de css</h2>
+
+            <p> Es la forma en la que el navegador aplica los estilos CSS al documento HTML, los podemos dividir en:</p>
+
+            <ol>
+                <li><h3>La cascada:</h3> 
+                    <p>De forma secuencial en el siguiente orden, se le van aplicando estilos a los elementos del documento html:</p>
+                    <ol>
+                        <li><b>User agent:</b> Los primeros estilos que le aplican son los que estan predeterminador por el navegador que estemos usando</li>
+                        <li><b>personalizaciones del usuario:</b> Luego las configuracion del navegador del usuario</li>
+                        <li><b>Estilos del autor:</b> Por ultimo el codigo css del programador</li>
+                    </ol>
+                </li>
+
+                    
+                <li><h3>La espeficidad</h3>
+                    <p>
+                       Continuando con el ultimo punto anterior "estilos del autor", estos a su vez dependen de la espeficidad, que vienen de peso especifico, cada elemento html tiene su propio peso, y los estilos css  tambien dependen del mismo, ganan siempre los de mayor peso especifico. Segun que selector usemos, se le dara mayor o menor importancia al estilo indicado.<br> Es muy importante el peso del selector ya que cuando hay conflictos de estilos css quedara finalmente el mas grande. 
+                    </p>
+                    
+                    <div>       
+                        <img src="img/especificidad.png" alt="imagen que explica la especificidad en CSS" width="30%" >
+                    </div>
+                    <small>Colocando el mouse sobre el selector css, veremos su peso especifico como muestra la imagen de arriba</small>
+                    <p>Usar <code>!important</code> se considera una mala practica porque rompe con la especificidad, ya que un estilo dado con ese selector se aplicara de forma obligatoria.</p>
+
+                    <h5>Ejemplo:</h5>
+<pre>
+    aside{
+        background-color: yellowgreen !important;
+    }
+    .ejemplo-espe {
+        background-color: lightblue;
+    }
+    
+    #ejemplo-espe{
+        background-color: #197e13 ;
+    }    
+</pre>
+
+                    <aside id="ejemplo-espe" class="ejemplo-espe" style="background-color: azure;">En este ejemplo, al texto se le aplican diferentes <code>background-color</code> con el fin de que quede el de mayor peso especifico, se usan ID, clase, estilos en linea y el atributo !important.</aside>
+
+                </li>
+                <li>
+                    <h3>La herencia</h3>
+                    <p>
+                        Es la capacidad de que un selector herede los estilos de su elemento padre, y esto se puede lograr asignandole la propiedad <code>inherit</code> a cada atributo que deseamos heredar. Si deseamos evitar la herencia, esta quedaria cancelada si le asignamos otros valores a nuestro selector o si le colocamos la propiedad <code>initial</code> a cada atributo.
+                    </p>
+
+                    <h5>Ejemplo de herencia:</h5>
+<pre>
+    /* Cada item de la lista hereda el borde que tiene su contenedor padre "ol" */
+
+    .ejemplo-herencia{
+        border: thin solid black;
+    }
+    .ejemplo-herencia li{
+        border: inherit;
+    }    
+</pre>                    
+
+
+                    <ul class="ejemplo-herencia">
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                        <li>item 4</li>
+                    </ul>
+                </li>
+            </ol>
+
+    
+        </article>
+
+        <hr>
+
+        <!-- normalizacion de atributos -->
+        <article id="normalizacion">
+
+            <h2>Normalize</h2>
+            
+            <p>
+                Normalize es un fichero CSS que se lo linkea asi <code>link rel="stylesheet" href="css/normalize.css"</code>, cuyo principal objetivo es mantener los estilos similares en los distintos navegadores, ya que cada uno agrega sus propios estilos por defecto. Por lo que esta hoja de estilo describe los estilos "estandares" que tendra cada elemento HTML.</p>
+
+                <h5>Ejemplo</h5>
+<pre>
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+</pre>
+            
+        </article>
+
+        <hr>
+
+        <!-- Prefijos en propiedades experimentales -->
+
+        <article id="prefijos">
+
+            
+
+            <h2>Prefijos</h2>
+
+            <p>Los proveedores de navegadores a veces agregan prefijos a las propiedades de CSS experimentales o no estándar, por lo que los desarrolladores pueden experimentar con nuevas ideas mientras que, evitan que se confíe en sus experimentos y luego rompan el código de los desarrolladores web durante el proceso de estandarización. Los desarrolladores deben esperar para incluir la propiedad sin prefijar hasta que se estandarice el comportamiento del navegador.</p>
+
+            <p>Los principales navegadores usan los siguientes prefijos:</p>
+
+            <ol>
+                <li>-webkit- (Chrome, Safari, nuevas versiones de Opera, casi todos los navegadores iOS (incluyendo Firefox for iOS); basicamente, cualquier navegador basado en WebKit)</li>
+                <li>-moz- (Firefox)</li>
+                <li>-o- (Versiónes antiguas, pre-Webkit, de Opera)</li>
+                <li>-ms- (Internet Explorer y Microsoft Edge)</li>
+            </ol>
+
+        </article>
+
+        <hr>
+
+        <article id="seo">
+
+            <h2>SEO</h2>
+
+            <P>
+                SEO (Search Engine Optimization) es el proceso de mejorar la visibilidad de un sitio web en los resultados orgánicos (no pagados) de los motores de búsqueda. El objetivo del SEO es aumentar la cantidad y calidad del tráfico que llega a un sitio web, al mejorar su posición en los resultados de búsqueda para ciertas palabras clave relevantes.
+                
+                El SEO implica una serie de prácticas, tanto en el contenido del sitio web como en aspectos técnicos y de estructura, con el fin de que los motores de búsqueda comprendan mejor de qué trata el sitio y lo consideren relevante para ciertas consultas de búsqueda. Algunas técnicas comunes de SEO incluyen la optimización de palabras clave, la creación de contenido de alta calidad, la optimización de la velocidad de carga del sitio, la mejora de la experiencia del usuario y la construcción de enlaces de calidad.
+            </P>
+
+            <h3>Factores que influyen el seo:</h3>
+
+            <ul>
+                <li>Semantica HTML: Si bien hay elementos que se visualizan igual en el documento html, cada uno tiene una funcion semantica segun el contenido que lo compone, esto es importante utilizarlo bien para lograr que el posicionamiento en los motores de busqueda mejore.</li>
+                <ul>
+                    <li>Para resaltar una palabra con los motores de busqueda usar <strong>strong</strong></li>
+                </ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </article>
+
+        <article id="transiciones">
+
+            <H2>transiciones</H2>
+
+            <p>Esta propiedad sirve para cambiar los estilos de un elemento pero de forma mas especifica, indicando cuanto va a tardar en realizar el cambio, cuanto va a esperar para hacer el cambio, cuales son las propiedades que queremos que tengan transicion y el timing de la transicion.</p>
+
+        </article>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+    </body>
+</html>

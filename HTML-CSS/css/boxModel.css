@@ -1,0 +1,213 @@
+/* body */
+body{
+    background-color: rgb(216, 227, 180);
+}
+/* primer caja de ejemplo del BOX MODEL :) */
+.texto-ejemplo{
+
+    background-color: lightcyan;
+    padding: 10px;
+    border: 3px solid black;
+    margin: 15px;
+    font-size: 20px;
+
+}
+/* code */
+code{
+    background-color: gainsboro;
+}
+/* centrar elementos block */
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+/* bordes y margenes */
+.borde1{
+    padding: 10px;
+    border-width: thick;
+    border-style: dashed;
+    border-color: blue;
+    border-radius: 10px;
+    background-color: beige;
+}
+.borde2{
+    padding: 10px;
+    border:2px solid red;
+    background-color: wheat;
+}
+.margen1{
+    margin: 10px 500px 25px 10px;
+    padding: 10px;
+    border: medium solid green;
+}
+.padding1{
+    padding: 50px 20px 10px;
+    border: medium solid salmon;
+}
+/* caja linea */
+.caja-linea{
+    background-color: salmon;
+    color: aliceblue;
+    border: 2px solid black;
+
+    height: 100px;
+    width: 100px;
+
+    margin: 0 50px;
+    padding: 0px 30px;
+}
+.caja-linea2{
+    background-color: rgb(123, 51, 43);
+    color: aliceblue;
+    border: 2px solid black;
+
+    margin: 0 20px;
+    padding: 0px 60px;
+}
+/* caja bloque */
+.caja-bloque{
+    height: 200px;
+    width: 200px;
+    border: thick solid gray;
+    margin: 5px;
+    padding: 5px;
+    background-color: aliceblue;
+}
+.caja-bloque2{
+    height: 200px;
+    width: 500px;
+    border: thick solid rgb(118, 67, 67);
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(175, 185, 193);
+}
+.caja-bloque3{
+    
+    border: thin solid rgb(236, 2, 2);
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(216, 226, 235);
+}
+/* display inline */
+.display-inline{
+    border: thin solid black;
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(230, 230, 135);
+    margin: 10px;
+}
+/* propiedad visibility */
+.caja-hidden{
+    background-color: forestgreen;
+    color: aliceblue;
+    border: 2px solid black;
+
+    margin: 20px;
+    padding: 10px;
+
+    width: 200px;
+    height: 100px;
+}
+.caja-hidden{
+    visibility: hidden;
+}
+/* overflow */
+.overflow{
+    background-color: rgb(171, 89, 89);
+    width: 200px;
+    height: 100px;
+    overflow:scroll;
+}
+.overflow2{
+    background-color: tan;
+    width: 200px;
+    height: 100px;
+}
+/* box sizing */
+.content-box{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    border: thick solid black;
+    padding: 10px;
+}
+.border-box{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    border: thick solid black;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+/* propiedad float */
+.floar-clear{
+    border: thin black solid;
+    padding: 10px;
+    width: 80%;
+    background-color: thistle;
+}
+.float-rigth{
+    background-color: violet;
+    float: right;
+}
+.float-left:nth-child(even){
+    background-color: aliceblue;
+}
+.float-left{
+    background-color: cadetblue;
+    float: left;
+}
+.float-rigth:nth-child(odd){
+    background-color: aliceblue;
+}
+.clear-both{
+    background-color: rgb(235, 188, 130);
+    clear:both;
+}
+.margin-padding{
+    margin: 5px;
+    padding: 5px;
+    border: thin solid black;
+}
+
+/* colapso de margenes */
+.colapso-margenes div{
+    border: thin solid black;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(192, 240, 170);
+    margin: 30px;
+    float: left;
+}
+.colapso-margenes{
+    background-color: seagreen;
+    display: inline-block;
+}
+
+
+/* Centrado de cajas */
+.sitio-web{
+    background-color: rgb(212, 241, 251);
+    border: thin solid black;
+    width: 40%;
+    height: auto;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header, .main, .footer{
+    margin-top: 1rem;
+    background-color: hotpink;
+    border: thin solid black;
+    width: 60%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

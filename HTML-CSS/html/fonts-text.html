@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/fonts-text.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+    <title>Fuentes y textos</title>
+
+</head>
+<body>
+
+    <a href="indexCss.html#temario-css">
+        <img src="../img/pointer.svg" alt="puntero para volver al temario" width="35px">
+    </a>
+
+    <h1>Estilos de fuentes y textos</h1>
+
+    <p><Strong>Aclaracion:</Strong> A la hora de implementarlos lo ideal es hacerlo en un archivo <code>css</code> aparte, para lograr un mayor orden</p>
+
+    <h2>Estilos de fuentes tipograficas</h2>
+
+    <ul class="line-height font-properties">
+        <li><strong>font:</strong> Es el shorthand para definir todas las anteriores con una sola propiedad</li>
+
+        <li><strong>font-family:</strong> las familias de fuentes son el grupo de fuentes que podemos usar, son ordenadas en forma de lista desde mayor prioridad a menor prioridad, <br>el navegador intentara usar la primera pero si no esta disponible seguira con las demas. <br> Suelen ser fuentes parecidas siempre.  <code>    font-family: "Montserrat",cursive;
+        </code></li>
+        <li class="font-size"><strong>font-size:</strong> determina el tamano de la fuente. <code>font-size: 18px;
+        </code></li>
+        <li class="font-weight"><strong>font-weight:</strong> Determina el peso de la tipografia o que tan "importante" es, son valores de 100 en 100 que indican el grosor de las letras. <code>    font-weight: 700;
+        </code> </li>
+        <li class="font-style"><strong>font-style:</strong> Define el estilo de la fuente. <code>    font-style: italic;
+        </code></li>
+        <li><strong>font-variant:</strong> Define que variante de la tipografia queremos usar</li>
+        <li><strong>line-height:</strong> Define el interlineado del texto</li>
+        <li ><strong>text-align:</strong> Donde quiero alinear el texto, si a la izquierda, derecha, centrado o justificado</li>
+        <li><strong>text-decoration:</strong> Nos permite dar diferentes decoraciones al texto</li>
+        <li><strong>text-indent:</strong>  nos permite darle indentacion o sangria al texto</li>
+        <li><strong>text-overflow:</strong> Para cuando el texto no entra en su contenedor. sirve para implementar esta situacion de diferentes maneras.</li>
+        <li><strong>text-transform:</strong> Indica como el texto debe ser transformado</li>
+        <li><strong>letter-spacing:</strong> indica el espacio entre letras</li> 
+        <li><strong>white-space:</strong> Define como son tratados los espacios en blanco</li>
+        <li><strong>word-break:</strong> sirve para romper o no la palabra cuando un texto no entra en el renglon</li>
+        <li><strong>word-spacing:</strong> determina el espacio entre palabras</li>
+        <li><strong>writing-mode:</strong> determina si el texto debe estar horizontal o vertical</li>
+
+    </ul>
+    
+    <h2>Tipografias Externas</h2>
+
+
+    <h3>Font face</h3>
+    <ol>
+        <li>Con la regla <code>@font-face</code> usamos las tipografias externas descargadas personalizadas por nosotros mismos. Esta tiene 2 propiedades, por un lado <code>font-family</code> en donde le indicamos como se va a llamar la tipografia, y por otro <code>src:url()</code> en donde buscamos la ruta del archivo tipografico, ahi mismo, con <code>format()</code> indicamos al navegador el formato de la tipo para que la misma cargue mas rapido.
+        
+    </ol>
+
+    <h3>Google fonts</h3>
+    <p>Para descargar tipografias externas lo hacemos con <code>link</code> desde google font, es importante tener en cuenta solo descargar lo necesario, ya sea las variantes de la misma letra o diferentes tipografias, esto lo hacemos para que la pagina optimice recursos y no pese de mas innecesariamente. Por lo que entiendo a traves de la api de google consumimos las tipografias que estan almacenadas en sus servidores</p>
+
+    <p>En la practica, es importante no tener mas de 2 tipografias, ya que esto puede confundir por lo qu eno es una buena practica. Para dar los diferentes pesos semanticos tenemos los pesos o weight</p>
+
+    <h4>Ejemplos:</h4>
+    <div class="Montserrat">
+        <p>Tipografia Montserrat (descargada)<br>
+    </div>
+    <div class="Inconsolata">
+        <p>Tipografia Inconsolata (importada de google fonts)</p>
+    </div>
+    <div class="font-propia">
+        <p>fuente propia con @font-face</p>
+    </div>
+
+   
+    <h2>Tipografias de iconos vectoriales</h2>
+
+    <p>Se puede usar los iconos de google icons o bootstrap linkeando los recursos e implementando las diferentes clases y elementos.</p>
+
+    <p>Esto lo hacemos gracias a los cdn o red de distribucion de contenidos, que son los lugares en donde las diferentes empresas hostean sus recursos para que nosotros los podamos usar sin necesidad de descargarlos localmente, sino que cargandolos desde internet.</p>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
