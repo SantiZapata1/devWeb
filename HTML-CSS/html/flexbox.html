@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/flexbox.css"> 
+    <title>flexbox</title>
+</head>
+<body>
+    <h1>Flexbox o flex</h1>
+    <p><strong>Concepto: </strong> Flexbox es un modelo de diseño en CSS que permite crear diseños más complejos y flexibles de una manera más sencilla que los modelos de diseño tradicionales. Con Flexbox, puedes controlar la distribución de elementos en un contenedor y alinearlos de manera fácil y rápida. </p>
+
+    <UL>
+        <LI><b>Contenedor flex (Flex container):</b>  Es el elemento padre que contiene a los elementos hijos (items). Para convertir un contenedor en un contenedor flex, se utiliza la propiedad `display` con el valor `flex` o `inline-flex`. Este se comporta como un elemento <code>block</code>  o <code>inline block.</code> </LI><br>
+
+        <LI> <b>Eje principal (Main axis) y eje secundario (Cross axis):</b>  En un contenedor flex, los elementos pueden ser dispuestos a lo largo del eje principal <code>(main axis)</code> o del eje secundario <code>(cross axis)</code>, dependiendo de la dirección de la fila o columna. Por defecto, el eje principal es horizontal (de izquierda a derecha) y el eje secundario es vertical (de arriba hacia abajo)</LI><br>
+
+        <LI><b>Dirección de la fila o columna (Flex-direction):</b>  Especifica la dirección en la que los elementos se colocan en el contenedor flex. Puede ser:
+            <ul>
+                <li><code>row</code> (de izquierda a derecha)</li>
+                <li><code>row-reverse</code> (de derecha a izquierda)</li>
+                <li><code>column</code> (de arriba hacia abajo)</li>
+                <li><code>column-reverse</code> (de abajo hacia arriba)</li>
+            </ul>
+        </LI><br>
+
+        <LI><b>Alineación de los elementos (Justify-content y align-items):</b> 
+            <ul>
+                <li><code>justify-content</code> alinea los elementos a lo largo del eje principal </li>
+                <li><code>align-items</code> alinea los elementos a lo largo del eje secundario.</li>
+            </ul>
+            Los valores comunes son <code>flex-start</code>, <code>flex-end</code>, <code>center</code> , <code>space-between</code> y <code>space-around</code>.</LI><br>
+
+        <LI><b>Orden de los elementos (Order):</b> La propiedad order permite cambiar el orden en el que los elementos son mostrados dentro del contenedor flex. Por defecto, todos los elementos tienen un valor de 0, y se pueden utilizar valores negativos o positivos para cambiar su posición.</LI><br>
+
+        <LI><b>Espaciado entre los elementos (Flex gap):</b> La propiedad gap permite definir un espacio entre los elementos en un contenedor flex. Es una forma más moderna de lograr el espaciado que utilizar márgenes.</LI><br>
+
+        <li><b>Flex-wrap:</b> indicamos si permitimos o no que cuando no haya espacio para los items hijos se bajen a una nueva linea, esta propiedad se la da al padre. Gracias a esto los elementos no se van a encoger sino que van a bajar de linea.</li><br>
+        
+
+    </UL>
+
+    <h3>Ejemplo flexbox</h3>
+
+    <div class="flexbox">
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+    </div>
+
+    <ul>
+        <li>Con display flex los componentes se pueden adaptar para achicarse, pero no van a crecer mas del tamaño que le indiquemos.</li>
+    </ul>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,6 +1,22 @@
 body{
     background-image: linear-gradient(lightblue 15%, yellow 40%, green);
 }
+.contenedor-ejemplos{
+    /* background-color: rgb(133, 190, 240); */
+}
+
+
+.contenedor-ejemplos li{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 10px;
+    width: 400px;
+    margin: 10px;
+}
+
+
+
+
 .box{
     margin-top: 20px ;
     margin-bottom: 20px ;

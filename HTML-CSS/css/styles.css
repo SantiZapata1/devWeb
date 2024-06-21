@@ -1,30 +1,26 @@
 /* root */
-html{
+html, body{
+    background-color: #FFF5E1;
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-/* body */
-body{
-    background-color: #EBF3E8;
-    padding-left: 20px;
-    padding-right: 20px;
+*,*:before,*::after{
+    box-sizing: inherit;
 }
+
 /* Estilos generales para el temario */
 #temario-css {
-    width: fit-content;
-    margin: 20px;
+    width: 30%;
+    max-height: 80vh;
+    margin-top: 20px;
     padding: 20px;
-    background-color: #f8f8f8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: auto;
     margin-right: auto;
-}
-
-/* Estilos para el título del temario */
-#temario-css h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
+    overflow: auto;
 }
 
 /* Estilos para la lista de elementos del temario */
@@ -56,28 +52,19 @@ body{
     border-top: 1px solid #ccc;
 }
 
-/* Estilos para el fondo radial gradient */
-.radial-gradient2 {
-    background: radial-gradient(circle, #fff, #f8f8f8);
-}
+
 
 /* Estilos para el borde con degradado */
 .gradient-border {
     border: 2px solid transparent;
-    border-image: linear-gradient(45deg, #ff9a9e, #fad0c4) 1;
+    /* border-image: linear-gradient(45deg, #ff9a9e, #fad0c4) 1; */
     -webkit-background-clip: text;
     color: transparent;
 }
 
 
 
-/* centrar imagenes */
-.center{
-    max-width: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 /* flecha */
 .arrow{
     width: 100px;
@@ -98,16 +85,7 @@ body{
 .border-thin{
     border: thin black solid;
 }
-/* etiquetas de codigo */
-code,pre{
-    color: rgb(103, 224, 27);
-    background-color: rgb(91, 81, 81);
-    font-size: 14px;
-    display: inline-block;
-    padding: 0.2rem;
-    border: medium rgb(103, 224, 27) dashed;
-    margin-top: 0.3rem;
-}
+
 /* recordatorios */
 .remembers{
     background-color: #b3eeb1;
@@ -116,12 +94,12 @@ code,pre{
 /* seccion con titulo y temario */
 #principal-section{
     width: 100%;
-    padding: 20px;
+    height: 100vh;
+    padding: 0px;
+    background-color: #DFD0B8;
 }
 /* fondos degradados circulares */
-.radial-gradient{
-    background-image: radial-gradient(#FFF455,#FFC700);
-}
+
 .radial-gradient2{
     background-color: #EEE4B1;
 }
@@ -141,126 +119,5 @@ h2{
 h3{
     color: rgb(119, 168, 152);
     text-decoration:underline;
-}
-
-/* ejemplos de clases generales */
-.text-18{
-    font-size: 18px;
-}
-.bg-beige{
-    background-color: beige;
-}
-
-/* hijos directos y descendientes */
-.hijos-directos > li{
-    background-color: rgb(144, 199, 181);
-}
-.hijos-descendientes b{
-    background-color: rgb(144, 199, 181);
-
-}
-
-/* selectores avanzados */
-p + span{
-    color: #034909;
-    font-size: 20px;
-}
-
-/* selector universal */
-*{
-    font-family:Arial, Helvetica, sans-serif
-
-}
-.selector-universal li{
-    font-size: 20px;
-    color: lightcoral;
-}
-
-/* pseudoclases */
-
-.hover-example:hover{
- background-color:aquamarine;
-}
-.hover-example{
-    height: 100px;
-    width: 400px;
-    border: thin solid black;
-    text-align: center;
-    padding-top: 50px;
-    background-color: lightcyan;
-}
-.active-example:active{
-    background-color: greenyellow;
-
-}
-.active-example{
-    height: 150px;
-}
-.odd-childs{
-    background-color: lavender;
-    width: 200px;
-    text-align: center;
-    margin-top: 15px;
-}
-.odd-childs>h4{ 
-    background-color: salmon;
-    margin-top: 0px;
-}
-.odd-childs p:nth-child(odd){
-    background-color: aquamarine;
-}
-
-/* pseudoelementos */
-.precio::before{
-    content: "$";
-    color: green;
-    font-weight: bold;
-}
-.precio::selection{
-    color: blue;
-    background-color: greenyellow;
-}
-.texto::first-letter{
-    color: brown;
-    font-weight: bold;
-}
-.texto::first-line{
-    background-color: sandybrown;
-}
-
-/* agrupacion de selectores */
-.form-agrupar-selectores input[type="text"],
-.form-agrupar-selectores input[type="email"],
-.form-agrupar-selectores input[type="submit"]
-{
-    background-color: lightgray;
-    display: block;
-    width: 200px;
-    margin-top: 5px;
-}
-
-/* Algoritmo CSS */
-
-aside{
-    background-color: yellowgreen !important;
-}
-.ejemplo-espe {
-    background-color: lightblue;
-}
-
-#ejemplo-espe{
-    background-color: #197e13 ;
-}
-.ejemplo-herencia{
-    border: thin solid black;
-}
-.ejemplo-herencia li{
-    border: inherit;
-}
-
-/* selectores avanzados */
-p ~ span {
-    color: red;
-    font-size: 14px;
 }
 

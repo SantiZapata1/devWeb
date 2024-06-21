@@ -1,0 +1,154 @@
+/* ejemplos de clases generales */
+.text-18{
+    font-size: 18px;
+}
+.bg-beige{
+    background-color: beige;
+}
+
+/* hijos directos y descendientes */
+.hijos-directos > li{
+    background-color: rgb(144, 199, 181);
+}
+.hijos-descendientes b{
+    background-color: rgb(144, 199, 181);
+
+}
+
+/* selectores avanzados */
+p + span{
+    color: #034909;
+    font-size: 20px;
+}
+
+/* selector universal */
+*{
+    font-family:Arial, Helvetica, sans-serif
+
+}
+.selector-universal li{
+    font-size: 20px;
+    color: lightcoral;
+}
+
+/* pseudoclases */
+
+.hover-example:hover{
+ background-color:aquamarine;
+}
+.hover-example{
+    height: 100px;
+    width: 400px;
+    border: thin solid black;
+    text-align: center;
+    padding-top: 50px;
+    background-color: lightcyan;
+}
+.active-example:active{
+    background-color: greenyellow;
+
+}
+.active-example{
+    height: 150px;
+}
+.odd-childs{
+    background-color: lavender;
+    width: 200px;
+    text-align: center;
+    margin-top: 15px;
+}
+.odd-childs>h4{ 
+    background-color: salmon;
+    margin-top: 0px;
+}
+.odd-childs p:nth-child(odd){
+    background-color: aquamarine;
+}
+
+/* pseudoelementos */
+.precio::before{
+    content: "$";
+    color: green;
+    font-weight: bold;
+}
+.precio::selection{
+    color: blue;
+    background-color: greenyellow;
+}
+.texto::first-letter{
+    color: brown;
+    font-weight: bold;
+}
+.texto::first-line{
+    background-color: sandybrown;
+}
+
+/* agrupacion de selectores */
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores input[type="submit"]
+{
+    background-color: lightgray;
+    display: block;
+    width: 200px;
+    margin-top: 5px;
+}
+
+/* Algoritmo CSS */
+
+aside{
+    background-color: yellowgreen !important;
+}
+.ejemplo-espe {
+    background-color: lightblue;
+}
+
+#ejemplo-espe{
+    background-color: #197e13 ;
+}
+.ejemplo-herencia{
+    border: thin solid black;
+}
+.ejemplo-herencia li{
+    border: inherit;
+}
+
+/* selectores avanzados */
+p ~ span {
+    color: red;
+    font-size: 14px;
+}
+
+/* titulos */
+h1{
+    margin: 0px;
+    color: #034909;
+    text-align: center;
+    text-decoration:underline;
+    font-size: 3rem;
+    
+}
+h2{
+    color: #197e13;
+}
+h3{
+    color: rgb(119, 168, 152);
+    text-decoration:underline;
+}
+/* etiquetas de codigo */
+code,pre{
+    color: rgb(103, 224, 27);
+    background-color: rgb(91, 81, 81);
+    font-size: 14px;
+    display: inline-block;
+    padding: 0.2rem;
+    border: medium rgb(103, 224, 27) dashed;
+    margin-top: 0.3rem;
+}
+/* centrar imagenes */
+.center{
+    max-width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

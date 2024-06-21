@@ -48,37 +48,48 @@
 
     <h3>Propiedades de object-fit</h3>
 
+    <ol>
+        <li>FILL</li>
+        <li>NONE</li>
+        <li>COVER</li>
+        <li>CONTAIN</li>
+    </ol>
+
     <ul>
 
-        <li> <b>fill:</b> <mark>valor por defecto</mark> La imagen se ajustará para llenar completamente el contenedor, sin mantener su relación de aspecto. <br> Esto puede hacer que la imagen se vea distorsionada si la relación de aspecto del contenedor y la imagen no coinciden. <b>Prioriza que se vea toda la imagen</b>
+        <li> 
+            <h3>FILL</h3>
+            <p><mark>valor por defecto</mark> La imagen se ajustará para llenar completamente el contenedor, sin mantener su relación de aspecto. Esto puede hacer que la imagen se vea distorsionada si la relación de aspecto del contenedor y la imagen no coinciden. <br>
+            <b>Prioriza que se vea toda la imagen y que el contenedor quede lleno</b></p>
+            
             <div class="card">
-
-                <img class="fill" src="assets/paisaje.avif" >
-        
+                <img class="fill" src="../assets/paisaje.avif" >
                 <h3>Titulo del card</h3>
-        
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto rem natus necessitatibus, facilis repudiandae sint officia inventore perferendis cum veritatis, itaque dolor recusandae beatae minus quasi, nostrum sed fuga quam?</p>
-        
             </div>
         </li>
 
-        <li><b>none:</b>La imagen se mostrará a su tamaño real, sin ajustes, y posiblemente se recortará si es más grande que el contenedor. <b>Prioriza el tamaño real de la imagen</b>
+        <li>
+            <H3>NONE</H3>
+            <p>La imagen se mostrará a su tamaño real, sin ajustes, y posiblemente se recortará si es más grande que el contenedor. <br>
+            <b>Prioriza el tamaño real de la imagen</b></p>
+            
             <div class="card">
-
-                <img class="none" src="assets/paisaje.avif">
-        
+                <img class="none" src="../assets/paisaje.avif">
                 <h3>Titulo del card</h3>
-        
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto rem natus necessitatibus, facilis repudiandae sint officia inventore perferendis cum veritatis, itaque dolor recusandae beatae minus quasi, nostrum sed fuga quam?</p>
-        
             </div>
             
         </li>
 
-        <li> <b>cover:</b> La imagen se ajustará para cubrir todo el contenedor, manteniendo su relación de aspecto. <br> Esto significa que es posible que la imagen se recorte para llenar completamente el contenedor, pero sin distorsionarla. <b>Prioriza rellenar el espacio y mantener la relacion de aspecto</b>
+        <li> 
+            <H3>COVER</H3>
+
+            <p>La imagen se ajustará para cubrir todo el contenedor, manteniendo su relación de aspecto. Esto significa que es posible que la imagen se recorte para llenar completamente el contenedor, pero sin distorsionarla. <b>Prioriza rellenar el espacio y mantener la relacion de aspecto</b></p>
+            
             <div class="card">
 
-                <img class="cover" src="assets/paisaje.avif" >
+                <img class="cover" src="../assets/paisaje.avif" >
         
                 <h3>Titulo del card</h3>
         
@@ -87,10 +98,14 @@
             </div>
         </li>
 
-        <li> <b>contain:</b> La imagen se ajustará para que quepa completamente dentro del contenedor, manteniendo su relación de aspecto. <br>Esto significa que es posible que el contenedor tenga espacio en blanco alrededor de la imagen si la imagen es más pequeña que el contenedor. <b>Prioriza que se vea toda la imagen manteniendo su formato</b>
+        <li> 
+            <h3>CONTAIN</h3>
+            <P>La imagen se ajustará para que quepa completamente dentro del contenedor, manteniendo su relación de aspecto. Esto significa que es posible que el contenedor tenga espacio en blanco alrededor de la imagen si la imagen es más pequeña que el contenedor. <br>
+            <b>Prioriza que se vea toda la imagen manteniendo su formato</b></P>
+            
             <div class="card">
 
-                <img class="contain" src="assets/paisaje.avif" >
+                <img class="contain" src="../assets/paisaje.avif" >
         
                 <h3>Titulo del card</h3>
         
@@ -105,7 +120,7 @@
 
     <h4>Resumen comparativo de <code>Objet-position</code></h4>
 
-    <img src="assets/Screenshot 2024-03-26 at 17.38.05.png" alt="" class="comparacion">
+    <img src="../assets/Screenshot 2024-03-26 at 17.38.05.png" alt="" class="comparacion">
 
 </body>
 </html>

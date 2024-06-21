@@ -1,9 +1,14 @@
 body{
     background-image: linear-gradient(lightblue, rgb(249, 140, 128));
 }
-li{
+UL li{
   display: inline-block;
-  width: 40%;
+  width: 350px;
+  border: thin solid black;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+
 }
 .content-image{
     background-color: aquamarine;
@@ -25,7 +30,9 @@ pre{
     border: thin solid black;
     width: 300px;
     height: 400px;
-    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
     text-align: center;
     background-color: sandybrown;
 }
